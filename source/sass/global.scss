@@ -1,0 +1,43 @@
+body {
+  font-family: $font-fira;
+  color: $color-font;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0;
+  cursor: pointer;
+}
+
+input:hover {
+  opacity: 0.5;
+  transition: all ease 0.5s;
+}
+
+input:focus {
+  opacity: 0.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+a[href]:hover {
+  opacity: 0.5;
+  transition: all ease 0.5s;
+}
+
+button:hover {
+  opacity: 0.5;
+  transition: all ease 0.5s;
+}
+
+li {
+  list-style: none;
+}

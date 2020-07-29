@@ -1,0 +1,39 @@
+.feedback__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.feedback__dt {
+  color: $color-head;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+}
+
+.feedback__dd {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  opacity: 0.74;
+}
+
+.feedback__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 170%;
+  opacity: 0.74;
+}
+
+.feedback__a {
+  color: $color-head;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  text-decoration-line: underline;
+}

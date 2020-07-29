@@ -1,0 +1,29 @@
+.header {
+  background-image: url(../img/head-photo-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background: url("../img/head-photo-desktop@2x.png") no-repeat;
+  }
+}
+
+.header__phone {
+  color: $color-font;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.header__button {
+  color: $color-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  font-variant: small-caps;
+  border: none;
+  border-bottom: 1px dashed $color-font;
+  background: none;
+}
