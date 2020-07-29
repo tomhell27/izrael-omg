@@ -16,30 +16,35 @@
     <nav class="header__nav">
       <a class="header__phone" href="tel:+97226216581">+ (972) 2 – 621 – 6581</a>
       <div>
-        <img src="img/logo.svg" alt="Логотип">
+        <a>
+          <img src="img/logo.svg" alt="Логотип">
+        </a>
       </div>
       <button class="header__button" type="button">заказать звонок</button>
     </nav>
-    <section class="Header__photo">
-      <img src="img/izrael-desktop.png" alt="Надпись Израиль">
-      <img src="img/girl-desctop.png" alt="Девушка с косой.">
+    <section class="header__photo">
+      <img class="header__izrael" src="img/izrael-desktop.png" alt="Надпись Израиль">
+      <img class="header__girl" src="img/girl-desctop.png" alt="Девушка с косой.">
     </section>
     <section class="header__scroll">
-      <h1>Учёба, путешествие и карьера для еврейской молодёжи</h1>
-      <a href="#about">
-      </a>
+      <h1 class="header__head">Учёба, путешествие и карьера для еврейской молодёжи</h1>
+      <a class="header__hint" href="#about"></a>
     </section>
   </header>
 
   <main>
     <section class="about-program" id="about">
-      <h2 class="head">О программе</h2>
+      <div class="about-program__wrap">
+      <h2 class="head about-program__head">О программе</h2>
       <p>
         «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.
         Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.
         В течение освоения программ предусмотрен грант от 4200 до 8400$.
       </p>
+      <div class="about-program__img">
       <img src="img/program-photo-desktop.jpg" alt="Видео">
+    </div>
+    </div>
     </section>
 
     <section class="programs">
@@ -132,7 +137,7 @@
           <label for="">
             <input type="tel">
           </label>
-          <button type="submit">Перезвоните мне</button>
+          <button class="gradient-button" type="submit">Перезвоните мне</button>
         </form>
       </div>
       <img src="img/want-photo-desktop.png" alt="Девушка с флагом Израиля">
@@ -200,7 +205,7 @@
           Познакомьтесь с программой от первого лица!
           Многие участники ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.
         </p>
-        <a href="#">смотреть фото</a>
+        <a class="gradient-button"  href="#">смотреть фото</a>
       </div>
     </section>
 
@@ -447,7 +452,7 @@
           <label for="">
             <input type="tel">
           </label>
-          <button type="submit">Позвоните мне</button>
+          <button class="gradient-button" type="submit">Позвоните мне</button>
         </form>
       </div>
     </section>
@@ -479,7 +484,7 @@
       <label for="">
         <input type="tel">
       </label>
-      <button type="submit">Перезвоните мне</button>
+      <button class="gradient-button" type="submit">Перезвоните мне</button>
       <div>
         <input name="agree" type="checkbox" checked id="agree" aria-label="согласен" required>
         <label for="agree"></label>
@@ -492,7 +497,7 @@
     <button type="button"></button>
     <h2>Заявка принята</h2>
     <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
-    <button type="button">Понятно</button>
+    <button class="gradient-button" type="button">Понятно</button>
   </section>
 </body>
 

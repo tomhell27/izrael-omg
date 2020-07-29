@@ -1,8 +1,44 @@
+.about-program {
+  position: relative;
+  background-image: url(../img/watercolor-program-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .about-program p {
+  width: 720px;
+  margin: auto;
   font-family: $font-fira;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 170%;
   text-align: center;
+}
+
+.about-program__wrap {
+  width: calc(100% - 500px);
+  margin: 0 auto;
+  min-width: 870px;
+}
+
+.about-program__head {
+  text-align: center;
+}
+
+.about-program__img {
+  position: relative;
+}
+
+.about-program__img::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  background-image: url(../img/play-button.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 40%;
+  left: 45%;
 }

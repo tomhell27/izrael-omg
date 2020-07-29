@@ -2,11 +2,34 @@
   background-image: url(../img/head-photo-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position-y: -30px;
+  position: relative;
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background: url("../img/head-photo-desktop@2x.png") no-repeat;
   }
+}
+
+.header__nav {
+  width: calc(100% - 220px);
+  min-width: 950px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__girl {
+  position: relative;
+  left: 510px;
+  top: 75px;
+}
+
+.header__izrael {
+  position: absolute;
+  left: 175px;
+  top: 130px;
 }
 
 .header__phone {
@@ -26,4 +49,38 @@
   border: none;
   border-bottom: 1px dashed $color-font;
   background: none;
+}
+
+.header__head {
+  width: 360px;
+  position: relative;
+  bottom: 155px;
+  margin: 0 auto;
+  color: $color-white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header__hint::before {
+  content: "";
+  width: 75px;
+  height: 132px;
+  background-image: url(../img/scroll.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.header__hint {
+  display: block;
+  width: 75px;
+  height: 132px;
+  position: relative;
+  z-index: 666;
+  margin: 0 auto;
+  bottom: 130px;
 }
