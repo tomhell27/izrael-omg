@@ -15,16 +15,36 @@
   <header class="header">
     <nav class="header__nav">
       <a class="header__phone" href="tel:+97226216581">+ (972) 2 – 621 – 6581</a>
-      <div>
-        <a>
+      <a class="header__logo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
           <img src="img/logo.svg" alt="Логотип">
-        </a>
-      </div>
+        </picture>
+      </a>
       <button class="header__button" type="button">заказать звонок</button>
     </nav>
     <section class="header__photo">
-      <img class="header__izrael" src="img/izrael-desktop.png" alt="Надпись Израиль">
-      <img class="header__girl" src="img/girl-desctop.png" alt="Девушка с косой.">
+
+      <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/izrael-mobile.webp, img/izrael-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="img/izrael-desktop.webp, img/izrael-desktop@2x.webp 2x">
+
+        <!-- 1х: 347px 2x: 694px -->
+        <source media="(max-width: 767px)" srcset="img/izrael-mobile.png, img/izrael-mobile@2x.png 2x">
+        <!-- 1x: 1018px 2x: 2036px -->
+        <img class="header__izrael" src="img/izrael-desktop.png" srcset="img/izrael-desktop@2x.png 2x" alt="Надпись Израиль">
+      </picture>
+
+      <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/girl-mobile.webp, img/girl-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="img/girl-desktop.webp, img/girl-desktop@2x.webp 2x">
+
+        <!-- 1х: 320px 2x: 640px -->
+        <source media="(max-width: 767px)" srcset="img/girl-mobile.png, img/girl-mobile@2x.png 2x">
+        <!-- 1x: 1366px 2x: 2744px -->
+        <img class="header__girl" src="img/girl-desktop.png" srcset="img/girl-desktop@2x.png 2x" alt="Девушка с косой.">
+      </picture>
+
     </section>
     <section class="header__scroll">
       <h1 class="header__head">Учёба, путешествие и карьера для еврейской молодёжи</h1>
@@ -35,16 +55,26 @@
   <main>
     <section class="about-program" id="about">
       <div class="about-program__wrap">
-      <h2 class="head about-program__head">О программе</h2>
-      <p>
-        «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.
-        Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.
-        В течение освоения программ предусмотрен грант от 4200 до 8400$.
-      </p>
-      <div class="about-program__img">
-      <img src="img/program-photo-desktop.jpg" alt="Видео">
-    </div>
-    </div>
+        <h2 class="head about-program__head">О программе</h2>
+        <p>
+          «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.
+          Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.
+          В течение освоения программ предусмотрен грант от 4200 до 8400$.
+        </p>
+        <div class="about-program__img">
+
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-mobile.webp, img/program-photo-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/program-photo-desktop.webp, img/program-photo-desktop@2x.webp 2x">
+
+            <!-- 1х: 320px 2x: 640px -->
+            <source media="(max-width: 767px)" srcset="img/program-photo-mobile.jpg, img/program-photo-mobile@2x.jpg 2x">
+            <!-- 1x: 870px 2x: 1740px -->
+            <img src="img/program-photo-desktop.jpg" srcset="img/program-photo-desktop@2x.jpg 2x" alt="Видео">
+          </picture>
+
+        </div>
+      </div>
     </section>
 
     <section class="programs">
@@ -132,7 +162,8 @@
       <h2 class="visually-hidden">Обратная связь</h2>
       <div class="want-to-go__form">
         <p class="head">Хочу поехать!</p>
-        <p class="want-to-go__p">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
+        <p class="want-to-go__p">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
+        </p>
         <form action="">
           <label for="">
             <input type="tel">
@@ -153,11 +184,12 @@
           Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе.
           Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.
         </p>
-        <p class="how-to-go__p2">Чтобы иметь возможность получить грант на обучение  от 4200 до 8400$, вы должны:</p>
+        <p class="how-to-go__p2">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
         <ol>
           <li class="how-to-go__item">Быть в возрасте от 16 до 30 лет </li>
           <li class="how-to-go__item">Иметь оконченное среднее образование.</li>
-          <li class="how-to-go__item">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку.</li>
+          <li class="how-to-go__item">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку.
+          </li>
           <li class="how-to-go__item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</li>
         </ol>
         <p class="how-to-go__p3">
@@ -443,7 +475,8 @@
       <div class="contacts__footer">
         <div>
           <p class="contacts__p">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-          <p class="contacts__p2">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
+          <p class="contacts__p2">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт
+            спам от нас!</p>
         </div>
         <form action="">
           <label for="">

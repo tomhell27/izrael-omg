@@ -3,6 +3,7 @@
   background-image: url(../img/watercolor-program-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .about-program p {
@@ -24,6 +25,7 @@
 
 .about-program__head {
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .about-program__img {
@@ -41,4 +43,51 @@
   background-position: center;
   top: 40%;
   left: 45%;
+}
+
+@media (max-width: $tablet-width) {
+  .about-program__wrap {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    min-width: 750px;
+    overflow: hidden;
+  }
+
+  .about-program__head {
+    margin: 0 auto;
+  }
+
+  .about-program__img {
+    margin: 0 auto;
+  }
+
+  .about-program__img img {
+    width: 100%;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+  .about-program__wrap {
+    min-width: 320px;
+    margin-top: 45px;
+  }
+
+  .about-program p {
+    width: calc(100% - 20px);
+    min-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: initial;
+  }
+
+  .about-program__img::before {
+    width: 80px;
+    height: 80px;
+  }
 }
