@@ -1,4 +1,29 @@
+.programs {
+  overflow: hidden;
+  background-image: url(../img/sketch-desktop.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 150px;
+}
+
+.programs__wrap {
+  width: calc(100% - 430px);
+  margin: 0 auto;
+  min-width: 720px;
+  margin-top: 190px;
+}
+
+.programs__container {
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .programs__link {
+  height: 40px;
+  padding-top: 22px;
+  padding-left: 70px;
+  display: block;
   color: $color-font;
   font-style: normal;
   font-weight: normal;
@@ -18,6 +43,8 @@
 }
 
 .programs__p {
+  width: calc(100% - 90px);
+  min-width: 410px;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -25,10 +52,191 @@
   opacity: 0.87;
 }
 
+.programs__anchors {
+  display: flex;
+  margin-top: 39px;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.programs__anchors-item {
+  height: 72px;
+  position: relative;
+  width: 230px;
+}
+
+.programs__link::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+.programs__link:hover {
+  color: $color-hover;
+  opacity: 1;
+}
+
+.programs__link:active {
+  color: $color-white;
+  text-transform: uppercase;
+  opacity: 1;
+  background-image: url(../img/back-active.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.programs__link--culture::before {
+  background-image: url(../img/culture.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--business::before {
+  background-image: url(../img/business.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--religion::before {
+  background-image: url(../img/religion.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--study::before {
+  background-image: url(../img/study.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--volonteur::before {
+  background-image: url(../img/volonteur.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--culture:hover::before {
+  background-image: url(../img/culture-hover.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--business:hover::before {
+  background-image: url(../img/business-hover.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--religion:hover::before {
+  background-image: url(../img/religion-hover.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--study:hover::before {
+  background-image: url(../img/study-hover.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--volonteur:hover::before {
+  background-image: url(../img/volonteur-hover.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--active:hover::before {
+  background-image: url(../img/culture-active.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--business:active::before {
+  background-image: url(../img/business-toggle.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--religion:active::before {
+  background-image: url(../img/religion-toggle.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--study:active::before {
+  background-image: url(../img/study-toggle.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__link--volonteur:active::before {
+  background-image: url(../img/volonteur-toggle.svg);
+  background-repeat: no-repeat;
+}
+
+.programs__list {
+  width: calc(100% - 291px);
+  margin-top: 50px;
+  padding-left: 0;
+  height: 500px;
+  overflow: hidden;
+}
+
+.programs__item {
+  height: 500px;
+}
+
 @media (max-width: $tablet-width) {
 
 }
 
 @media (max-width: $mobile-width) {
+  .programs__container {
+    flex-direction: column;
+  }
 
+  .programs__anchors {
+    margin-top: 0;
+    flex-direction: revert;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .programs__link {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .programs__link:active {
+    color: $color-white;
+    text-transform: uppercase;
+    opacity: 1;
+    background-image: url(../img/back-active-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .programs__wrap {
+    width: 100%;
+    min-width: 0;
+    margin-top: 80px;
+  }
+
+  .programs__h {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .programs__head {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+  }
+
+  .programs__list {
+    width: calc(100% - 40px);
+    height: 350px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .programs__p {
+    width: 100%;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .programs__item {
+    height: 350px;
+  }
 }

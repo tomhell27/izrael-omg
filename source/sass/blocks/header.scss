@@ -142,16 +142,6 @@
 }
 
 @media (max-width: $mobile-width) {
-  .header {
-    background-image: url(../img/head-photo-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 40px;
-
-    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-      background: url("../img/head-photo-mobile@2x.png") no-repeat;
-    }
-  }
 
   .header__phone {
     margin-bottom: 10px;
@@ -200,5 +190,24 @@
 
   .header__scroll {
     bottom: 180px;
+  }
+
+  .header__photo {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: $good-look-width) {
+  .header {
+    background-image: url(../img/head-photo-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background: url("../img/head-photo-mobile@2x.png") no-repeat;
+    }
   }
 }
