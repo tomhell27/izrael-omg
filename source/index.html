@@ -2,13 +2,12 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Учеба, путешествие и карьера в Израиле">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Учеба, карьера, работа в Израиле" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <title>Израиль</title>
-  <link href="css/outline.css" rel="stylesheet">
 </head>
 
 <body>
@@ -77,6 +76,7 @@
             <img src="img/program-photo-desktop.jpg" srcset="img/program-photo-desktop@2x.jpg 2x" alt="Видео">
           </picture>
 
+          <button class="about-program__button" type="button"></button>
         </div>
       </div>
     </section>
@@ -85,14 +85,25 @@
       <div class="programs__wrap">
         <h2 class="head programs__h">Программы</h2>
         <div class="programs__container">
+          <div class="programs__anchors-container">
           <ul class="programs__anchors">
-            <li class="programs__anchors-item"><a href="#base" class="programs__link programs__link--culture">Общие</a></li>
-            <li class="programs__anchors-item"><a href="#academy" class="programs__link programs__link--study">Академические</a></li>
-            <li class="programs__anchors-item"><a href="#internship" class="programs__link programs__link--business">Стажировки</a></li>
-            <li class="programs__anchors-item"><a href="#volunteer" class="programs__link programs__link--volonteur">Волонтерство</a></li>
-            <li class="programs__anchors-item"><a href="#religion" class="programs__link programs__link--religion">Религиозные</a></li>
+            <li class="programs__anchors-item programs__anchors-item--active" data-tab="0">
+              <a href="#base" class="programs__link programs__link--culture">Общие</a>
+            </li>
+            <li class="programs__anchors-item">
+              <a href="#academy" class="programs__link programs__link--study" data-tab="1">Академические</a>
+            </li>
+            <li class="programs__anchors-item">
+              <a href="#internship" class="programs__link programs__link--business" data-tab="2">Стажировки</a>
+            </li>
+            <li class="programs__anchors-item" data-tab="3"><a href="#volunteer"
+                class="programs__link programs__link--volonteur">Волонтерство</a>
+            </li>
+            <li class="programs__anchors-item" data-tab="4"><a href="#religion"
+                class="programs__link programs__link--active programs__link--religion">Религиозные</a>
+            </li>
           </ul>
-
+        </div>
           <ul class="programs__list">
             <!--1-->
             <li id="base" class="programs__item programs__item--culture">
@@ -166,33 +177,34 @@
 
     <section class="want-to-go">
       <div class="want-to-go__wrap">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <div class="want-to-go__form">
-        <p class="head">Хочу поехать!</p>
-        <p class="want-to-go__p">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
-        </p>
-        <form class="want-to-go__action" action="" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-        autocomplete="off">
-          <label for="phone1">
-            <input id="phone1" type="tel" placeholder="Телефон" required>
-          </label>
-          <button class="gradient-button" type="submit">Перезвоните мне</button>
-        </form>
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <div class="want-to-go__form">
+          <p class="head">Хочу поехать!</p>
+          <p class="want-to-go__p">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все
+            вопросы!
+          </p>
+          <form class="want-to-go__action" method="post" enctype="multipart/form-data"
+            action="https://echo.htmlacademy.ru" autocomplete="off">
+            <label for="phone1">
+              <input class="phone" id="phone1" name="phone" type="tel" placeholder="Телефон" required>
+            </label>
+            <button class="gradient-button" type="submit">Перезвоните мне</button>
+          </form>
+        </div>
+
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/want-photo-mobile.webp, img/want-photo-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/want-photo-desktop.webp, img/want-photo-desktop@2x.webp 2x">
+
+          <!-- 1х: 320px 2x: 640px -->
+          <source media="(max-width: 767px)" srcset="img/want-photo-photo-mobile.png, img/want-photo-mobile@2x.png 2x">
+          <!-- 1x: 870px 2x: 1740px -->
+          <img class="want-to-go__img" src="img/want-photo-desktop.png" srcset="img/want-photo-desktop@2x.png 2x"
+            alt="Девушка с флагом Израиля">
+        </picture>
+
       </div>
-
-      <picture>
-        <source type="image/webp" media="(max-width: 767px)"
-          srcset="img/want-photo-mobile.webp, img/want-photo-mobile@2x.webp 2x">
-        <source type="image/webp" srcset="img/want-photo-desktop.webp, img/want-photo-desktop@2x.webp 2x">
-
-        <!-- 1х: 320px 2x: 640px -->
-        <source media="(max-width: 767px)"
-          srcset="img/want-photo-photo-mobile.png, img/want-photo-mobile@2x.png 2x">
-        <!-- 1x: 870px 2x: 1740px -->
-        <img class="want-to-go__img" src="img/want-photo-desktop.png" srcset="img/want-photo-desktop@2x.png 2x" alt="Девушка с флагом Израиля">
-      </picture>
-
-    </div>
     </section>
 
     <section class="how-to-go">
@@ -206,13 +218,13 @@
           Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.
         </p>
         <p class="how-to-go__p2">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
-        <ol>
+        <ul>
           <li class="how-to-go__item">Быть в возрасте от 16 до 30 лет </li>
           <li class="how-to-go__item">Иметь оконченное среднее образование.</li>
           <li class="how-to-go__item">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку.
           </li>
           <li class="how-to-go__item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</li>
-        </ol>
+        </ul>
         <p class="how-to-go__p3">
           Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса»,
           оплатив её полную стоимость.
@@ -275,7 +287,7 @@
           </li>
           <!--2-->
           <li>
-            <h3 class="questions__head"></h3>>Что такое грант на обучение? </h3>
+            <h3 class="questions__head">>Что такое грант на обучение? </h3>
             <p class="questions__answer">
               Это субсидия, выдаваемая на проведение исследований, образовательные и прочие некоммерческие цели.
             </p>
@@ -524,36 +536,45 @@
 
   </footer>
   <!--Заказать звонок-->
-  <section class="modal got-it">
-    <button type="button"></button>
-    <h2>Заказать звонок</h2>
-    <p>
-      Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно
-      поможем найти ответ на ваш вопрос!
-    </p>
-    <form action="">
-      <label for="">
-        <input type="text">
-      </label>
-      <label for="">
-        <input type="tel">
-      </label>
-      <button class="gradient-button" type="submit">Перезвоните мне</button>
-      <div>
-        <input name="agree" type="checkbox" checked id="agree" aria-label="согласен" required>
-        <label for="agree"></label>
-        <a href="#">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</a>
-      </div>
-    </form>
+  <section class="modal got-it close">
+    <div class="got-it__wrap">
+      <button class="modal__button got-it__button" type="button"></button>
+      <h2>Заказать звонок</h2>
+      <p>
+        Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно
+        поможем найти ответ на ваш вопрос!
+      </p>
+      <form class="got-it__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+        autocomplete="off">
+        <label for="name">
+          <input class="got-it__input" id="name" type="text" required name="name" placeholder="имя">
+        </label>
+        <label for="phone">
+          <input class="got-it__input phone" id="phone" type="tel" name="phone" placeholder="телефон" required>
+        </label>
+        <button class="gradient-button got-it__gradient" type="submit">Перезвоните мне</button>
+        <div class="got-it__check-container">
+          <input class="got-it__check visually-hidden" name="agree" type="checkbox" checked id="agree"
+            aria-label="согласен" required>
+          <label class="got-it__label" for="agree"></label>
+          <a class="got-it__a" href="#">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
   </section>
   <!--Заявка принята-->
-  <section class="modal call-me">
-    <button type="button"></button>
+  <section class="modal call-me close">
+    <div class="call-me__wrap">
+    <button type="button" class="modal__button call-me__button"></button>
+    <div class="call-me__decoration"></div>
     <h2>Заявка принята</h2>
     <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
-    <button class="gradient-button" type="button">Понятно</button>
+    <button class="gradient-button call-me__gradient" type="button">Понятно</button>
+  </div>
   </section>
-
+  <script src="js/modal.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/mask.js"></script>
   <script src="js/tabs.js"></script>
 </body>
 

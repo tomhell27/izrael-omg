@@ -10,6 +10,17 @@
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
   border-radius: 80px;
   background: $color-gradient;
+  border: none;
+}
+
+.gradient-button:hover {
+  opacity: 1;
+  background: $color-gradient-hover;
+}
+
+.gradient-button:active {
+  opacity: 1;
+  background: $color-gradient-active;
 }
 
 @media (max-width: $tablet-width) {
