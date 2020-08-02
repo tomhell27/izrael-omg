@@ -38,10 +38,31 @@
   text-decoration-line: underline;
 }
 
-@media (max-width: $tablet-width) {
+.feedback__list {
+  display: flex;
+  width: 6504px;
+}
 
+.feedback__list-wrap {
+  width: 1084px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.feedback__item {
+  width: 1084px;
+}
+
+.feedbacks__footer {
+  width: 1084px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $tablet-width) {
 }
 
 @media (max-width: $mobile-width) {
-
 }

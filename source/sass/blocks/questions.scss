@@ -1,0 +1,133 @@
+.questions {
+  position: relative;
+  background-image: url(../img/watercolor-questions-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background: url("../img/watercolor-questions-desktop@2x.png") no-repeat;
+  }
+}
+
+.questions::before {
+  content: "";
+  width: 194px;
+  height: 177px;
+  background-image: url(../img/bag-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background: url("../img/bag-desktopp@2x.png") no-repeat;
+  }
+}
+
+.questions__head {
+  cursor: pointer;
+  position: relative;
+  width: 400px;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 38px;
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.questions__item {
+  border-bottom: 1px $color-border-dashed solid;
+}
+
+.questions__head::before {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 170%;
+  color: $color-hover;
+}
+
+.questions__head::after {
+  content: "";
+  width: 15px;
+  height: 8px;
+  position: absolute;
+  right: 0;
+  background-image: url(../img/down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.questions__head--active::after {
+  background-image: url(../img/up.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.questions__head--1::before {
+  content: "1";
+}
+
+.questions__head--2::before {
+  content: "2";
+}
+
+.questions__head--3::before {
+  content: "3";
+}
+
+.questions__head--4::before {
+  content: "4";
+}
+
+.questions__head--5::before {
+ content: "5";
+}
+
+.questions__head--6::before {
+  content: "6";
+}
+
+.questions__item {
+  width: 560px;
+}
+
+.questions__answer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  opacity: 0.74;
+}
+
+.questions__wrap {
+  display: flex;
+  width: calc(100% - 220px);
+  margin: 0 auto;
+}
+
+.questions__container {
+  width: 560px;
+}
+
+.questions__img-wrap {
+  position: relative;
+  right: 0;
+}
+
+@media (max-width: $tablet-width) {
+
+}
+
+@media (max-width: $mobile-width) {
+
+}
