@@ -1,3 +1,44 @@
+.how-to-go {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/watercolor-go-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.how-to-go::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/stamp-desktop.png);
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+}
+
+.how-to-go__img {
+  width: calc(100% - 642px);
+  max-width: 581px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.how-to-go__img img {
+  width: 100%;
+  height: auto;
+}
+
+.how-to-go__wrap {
+  display: flex;
+  width: calc(100% - 262px);
+  min-width: 980px;
+  justify-content: flex-end;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
 .how-to-go__p {
   font-style: normal;
   font-weight: normal;
@@ -14,6 +55,8 @@
 }
 
 .how-to-go__p3 {
+  padding-left: 16px;
+  border-left: 3px $color-hover solid;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -22,18 +65,87 @@
 }
 
 .how-to-go__item {
+  width: 396px;
+  height: 36px;
+  padding-left: 24px;
+  margin-bottom: 40px;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 140%;
+  position: relative;
 }
 
-@media (max-width: $tablet-width) {
+.how-to-go__item::before {
+  position: absolute;
+  padding-left: 22px;
+  padding-top: 10px;
+  z-index: 15;
+  left: -26px;
+  top: -6px;
+  color: $color-hover;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 170%;
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
+.how-to-go__item--1::before {
+  content: "1";
+}
+
+.how-to-go__item--2::before {
+  content: "2";
+}
+
+.how-to-go__item--3::before {
+  content: "3";
+}
+
+.how-to-go__item--4::before {
+  content: "4";
+}
+
+.how-to-go__item--5::before {
+  content: "5";
+}
+
+.how-to-go__conditions {
+  padding: 0;
+  border-left: 1px dashed $color-border-dashed;
+}
+
+.how-to-go__description {
+  width: 552px;
+}
+
+
+@media (max-width: $tablet-width) {
+  .how-to-go__wrap {
+    min-width: 760;
+    justify-content: center;
+  }
+
+  .how-to-go__img {
+    display: none;
+  }
+
+  .how-to-go__description {
+    width: 100%;
+  }
+
+  .how-to-go__item {
+    width: 100%;
+  }
 }
 
 @media (max-width: $mobile-width) {
-
+  .how-to-go__wrap {
+    min-width: 320px;
+    justify-content: center;
+  }
 }
-
-

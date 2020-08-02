@@ -86,24 +86,24 @@
         <h2 class="head programs__h">Программы</h2>
         <div class="programs__container">
           <div class="programs__anchors-container">
-          <ul class="programs__anchors">
-            <li class="programs__anchors-item programs__anchors-item--active" data-tab="0">
-              <a href="#base" class="programs__link programs__link--culture">Общие</a>
-            </li>
-            <li class="programs__anchors-item">
-              <a href="#academy" class="programs__link programs__link--study" data-tab="1">Академические</a>
-            </li>
-            <li class="programs__anchors-item">
-              <a href="#internship" class="programs__link programs__link--business" data-tab="2">Стажировки</a>
-            </li>
-            <li class="programs__anchors-item" data-tab="3"><a href="#volunteer"
-                class="programs__link programs__link--volonteur">Волонтерство</a>
-            </li>
-            <li class="programs__anchors-item" data-tab="4"><a href="#religion"
-                class="programs__link programs__link--active programs__link--religion">Религиозные</a>
-            </li>
-          </ul>
-        </div>
+            <ul class="programs__anchors">
+              <li class="programs__anchors-item programs__anchors-item--active" data-tab="0">
+                <a href="#base" class="programs__link programs__link--culture">Общие</a>
+              </li>
+              <li class="programs__anchors-item">
+                <a href="#academy" class="programs__link programs__link--study" data-tab="1">Академические</a>
+              </li>
+              <li class="programs__anchors-item">
+                <a href="#internship" class="programs__link programs__link--business" data-tab="2">Стажировки</a>
+              </li>
+              <li class="programs__anchors-item" data-tab="3"><a href="#volunteer"
+                  class="programs__link programs__link--volonteur">Волонтерство</a>
+              </li>
+              <li class="programs__anchors-item" data-tab="4"><a href="#religion"
+                  class="programs__link programs__link--active programs__link--religion">Религиозные</a>
+              </li>
+            </ul>
+          </div>
           <ul class="programs__list">
             <!--1-->
             <li id="base" class="programs__item programs__item--culture">
@@ -171,6 +171,7 @@
               </p>
             </li>
           </ul>
+
         </div>
       </div>
     </section>
@@ -198,7 +199,7 @@
           <source type="image/webp" srcset="img/want-photo-desktop.webp, img/want-photo-desktop@2x.webp 2x">
 
           <!-- 1х: 320px 2x: 640px -->
-          <source media="(max-width: 767px)" srcset="img/want-photo-photo-mobile.png, img/want-photo-mobile@2x.png 2x">
+          <source media="(max-width: 767px)" srcset="img/want-photo-mobile.png, img/want-photo-mobile@2x.png 2x">
           <!-- 1x: 870px 2x: 1740px -->
           <img class="want-to-go__img" src="img/want-photo-desktop.png" srcset="img/want-photo-desktop@2x.png 2x"
             alt="Девушка с флагом Израиля">
@@ -208,58 +209,128 @@
     </section>
 
     <section class="how-to-go">
-      <div>
-        <img src="img/img-go-desktop.png" alt="Девушка с парнем улыбаются">
-      </div>
-      <div>
-        <h2 class="head">Как поехать</h2>
-        <p class="how-to-go__p">
-          Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе.
-          Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.
-        </p>
-        <p class="how-to-go__p2">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
-        <ul>
-          <li class="how-to-go__item">Быть в возрасте от 16 до 30 лет </li>
-          <li class="how-to-go__item">Иметь оконченное среднее образование.</li>
-          <li class="how-to-go__item">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку.
-          </li>
-          <li class="how-to-go__item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</li>
-        </ul>
-        <p class="how-to-go__p3">
-          Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса»,
-          оплатив её полную стоимость.
-        </p>
+      <div class="how-to-go__wrap">
+        <div class="how-to-go__img">
+          <img src="img/img-go-desktop.png" alt="Девушка с парнем улыбаются">
+        </div>
+        <div class="how-to-go__description">
+          <h2 class="head">Как поехать</h2>
+          <p class="how-to-go__p">
+            Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе.
+            Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.
+          </p>
+          <p class="how-to-go__p2">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
+          <ul class="how-to-go__conditions">
+            <li class="how-to-go__item how-to-go__item--1">Быть в возрасте от 16 до 30 лет </li>
+            <li class="how-to-go__item how-to-go__item--2">Иметь оконченное среднее образование.</li>
+            <li class="how-to-go__item how-to-go__item--3">Иметь документально подтверждённые еврейские корни и пройти
+              консульскую проверку.
+            </li>
+            <li class="how-to-go__item how-to-go__item--4">За последние 2 года быть не больше 3х месяцев подряд
+              непрерывно в Израиле.</li>
+          </ul>
+          <p class="how-to-go__p3">
+            Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса»,
+            оплатив её полную стоимость.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="izrael-live">
-      <h2 class="head">Жизнь в Израиле</h2>
-      <p class="izrael-live__p">
-        Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране
-        и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.
-      </p>
-      <ul class="izrael-live__advantage">
-        <li>
-          <img src="img/history-desktop.png" alt="Историческое здание">
-          <h3 class="izrael-live__head">Экскурсии по Израилю и знакомство с его историей</h3>
-        </li>
-        <li>
-          <img src="img/language-desktop.png" alt="Парень в наушниках">
-          <h3 class="izrael-live__head">Изучение иврита</h3>
-        </li>
-        <li>
-          <img src="img/study-desktop.png" alt="Два парня за компьютером">
-          <h3 class="izrael-live__head">Обучение современным навыкам и профессиям</h3>
-        </li>
-        <li>
-          <img src="img/project-desktop.png" alt="Парень с двумя девушками">
-          <h3 class="izrael-live__head">Совместные творческие проекты с израильской молодёжью </h3>
-        </li>
-        <li>
-          <img src="img/lider-desktop.png" alt="Человек на фоне заходящего солнца">
-          <h3 class="izrael-live__head">Развитие лидерства</h3>
-        </li>
-      </ul>
+      <div class="izrael-live__wrap">
+        <h2 class="head izrael-live__h2">Жизнь в Израиле</h2>
+        <p class="izrael-live__p">
+          Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране
+          и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.
+        </p>
+        <div class="izrael-live__advantage-wrap">
+          <ul class="izrael-live__advantage">
+            <li id="history" class="izrael-live__item">
+
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/history-mobile.webp, img/history-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/history-desktop.webp, img/history-desktop@2x.webp 2x">
+
+                <!-- 1х: 320px 2x: 640px -->
+                <source media="(max-width: 767px)" srcset="img/history-mobile.png, img/history-mobile@2x.png 2x">
+                <!-- 1x: 870px 2x: 1740px -->
+                <img src="img/history-desktop.png" srcset="img/history-desktop@2x.png 2x" alt="Историческое здание">
+              </picture>
+
+              <h3 class="izrael-live__head">Экскурсии по Израилю и знакомство с его историей</h3>
+            </li>
+            <li id="language" class="izrael-live__item">
+
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/language-mobile.webp, img/language-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/language-desktop.webp, img/language-desktop@2x.webp 2x">
+
+                <!-- 1х: 320px 2x: 640px -->
+                <source media="(max-width: 767px)" srcset="img/language-mobile.png, img/language-mobile@2x.png 2x">
+                <!-- 1x: 870px 2x: 1740px -->
+                <img src="img/language-desktop.png" srcset="img/language-desktop@2x.png 2x" alt="Парень в наушниках">
+              </picture>
+
+              <h3 class="izrael-live__head">Изучение иврита</h3>
+            </li>
+            <li id="study" class="izrael-live__item">
+
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/study-mobile.webp, img/study-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/study-desktop.webp, img/study-desktop@2x.webp 2x">
+
+                <!-- 1х: 320px 2x: 640px -->
+                <source media="(max-width: 767px)" srcset="img/study-mobile.png, img/study-mobile@2x.png 2x">
+                <!-- 1x: 870px 2x: 1740px -->
+                <img src="img/study-desktop.png" srcset="img/study-desktop@2x.png 2x" alt="Два парня за компьютером">
+              </picture>
+
+              <h3 class="izrael-live__head">Обучение современным навыкам и профессиям</h3>
+            </li>
+            <li id="project" class="izrael-live__item izrael-live__item--girls">
+
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/project-mobile.webp, img/project-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/project-desktop.webp, img/project-desktop@2x.webp 2x">
+
+                <!-- 1х: 320px 2x: 640px -->
+                <source media="(max-width: 767px)" srcset="img/project-mobile.png, img/project-mobile@2x.png 2x">
+                <!-- 1x: 870px 2x: 1740px -->
+                <img src="img/project-desktop.png" srcset="img/project-desktop@2x.png 2x" alt="Парень с двумя девушками">
+              </picture>
+
+              <h3 class="izrael-live__head">Совместные творческие проекты с израильской молодёжью </h3>
+            </li>
+            <li id="lider" class="izrael-live__item izrael-live__item--sun">
+
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/lider-mobile.webp, img/lider-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/lider-desktop.webp, img/lider-desktop@2x.webp 2x">
+
+                <!-- 1х: 320px 2x: 640px -->
+                <source media="(max-width: 767px)" srcset="img/lider-mobile.png, img/lider-mobile@2x.png 2x">
+                <!-- 1x: 870px 2x: 1740px -->
+                <img src="img/lider-desktop.png" srcset="img/lidert-desktop@2x.png 2x" alt="Человек на фоне заходящего солнца">
+              </picture>
+
+              <h3 class="izrael-live__head">Развитие лидерства</h3>
+            </li>
+          </ul>
+        </div>
+        <ul class="izrael-live__scroll">
+          <li class="izrael-live__li izrael-live__li--active"><a class="izrael-live__a--active" href="#history"></a></li>
+          <li class="izrael-live__li"><a href="#language"></a></li>
+          <li class="izrael-live__li"><a href="#study"></a></li>
+          <li class="izrael-live__li"><a href="#project"></a></li>
+          <li class="izrael-live__li"><a href="#lider"></a></li>
+        </ul>
+      </div>
     </section>
 
     <section class="galery">
@@ -565,12 +636,12 @@
   <!--Заявка принята-->
   <section class="modal call-me close">
     <div class="call-me__wrap">
-    <button type="button" class="modal__button call-me__button"></button>
-    <div class="call-me__decoration"></div>
-    <h2>Заявка принята</h2>
-    <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
-    <button class="gradient-button call-me__gradient" type="button">Понятно</button>
-  </div>
+      <button type="button" class="modal__button call-me__button"></button>
+      <div class="call-me__decoration"></div>
+      <h2>Заявка принята</h2>
+      <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
+      <button class="gradient-button call-me__gradient" type="button">Понятно</button>
+    </div>
   </section>
   <script src="js/modal.js"></script>
   <script src="js/form.js"></script>
