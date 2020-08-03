@@ -1,0 +1,22 @@
+.toggle {
+  display: flex;
+}
+
+.toggle__button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: $color-white;
+}
+
+.toggle__left {
+  background-image: url(../img/left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.toggle__right {
+  background-image: url(../img/right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}

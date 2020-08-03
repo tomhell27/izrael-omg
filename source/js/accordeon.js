@@ -3,24 +3,31 @@
 (function () {
   var questionsList = document.querySelector('.questions');
   var questions = questionsList.querySelectorAll('.questions__head');
+  var answers = questionsList.querySelectorAll('.questions__answer');
 
-  var checkClass = function () {
-    questions.forEach(function (e) {
-      if (e.classList.contains('questions__head--active')) {
-        e.classList.remove('questions__head--active');
-        var answer = e.parentElement.querySelector('.questions__answer');
-        answer.classList.add('close');
-      }
-    });
-  };
+  answers.forEach(function (e) {
+    e.classList.add('close');
+  });
 
   questions.forEach(function (e) {
+    e.classList.add('questions__head--passive');
+  });
+  function hideAll() {
+    questions.forEach(function (e) {
+      e.classList.toggle('questions__head--active', false);
+      e.nextElementSibling.classList.toggle('close', true);
+    });
+  }
 
+  questions.forEach(function (e) {
+    var answer = e.parentElement.querySelector('.questions__answer');
     e.addEventListener('click', function () {
-      checkClass();
+      if (!e.classList.contains('questions__head--active')) {
+        hideAll();
+      }
       e.classList.toggle('questions__head--active');
-      var answer = e.parentElement.querySelector('.questions__answer');
       answer.classList.toggle('close');
+
     });
   });
 })();

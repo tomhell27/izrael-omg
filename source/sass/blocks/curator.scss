@@ -1,3 +1,7 @@
+.curator {
+  width: 515px;
+}
+
 .curator__town {
   font-style: normal;
   font-weight: normal;
@@ -7,11 +11,14 @@
 }
 
 .curator__newsib {
+  border-bottom: 1px $color-head dashed;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 150%;
   font-variant: small-caps;
+  opacity: 0.74;
+  height: 20px;
 }
 
 .curator__name {
@@ -39,6 +46,11 @@
   font-size: 17px;
   line-height: 170%;
   opacity: 0.87;
+}
+
+.curator__navigator {
+  display: flex;
+  align-items: last baseline;
 }
 
 @media (max-width: $tablet-width) {

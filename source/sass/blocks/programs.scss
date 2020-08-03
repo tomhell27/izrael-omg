@@ -183,15 +183,20 @@
 
   .programs__anchors-container {
     width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   .programs__anchors {
     width: 1200px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50%;
     justify-content: space-between;
     margin-top: 0;
     flex-direction: revert;
+  }
+
+  .programs__anchors-item {
+    scroll-snap-align: center;
   }
 
   .programs__link {

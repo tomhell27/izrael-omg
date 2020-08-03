@@ -344,21 +344,21 @@
             <!--1-->
             <li class="questions__item">
               <h3 class="questions__head questions__head--1">Кто организатор? Какие сроки у программы?</h3>
-              <p class="questions__answer close">
+              <p class="questions__answer">
                 Программа расчитана на три года и организуется посредством "«Маса Израиль»
               </p>
             </li>
             <!--2-->
             <li class="questions__item">
               <h3 class="questions__head questions__head--2">Что такое грант на обучение? </h3>
-              <p class="questions__answer close">
+              <p class="questions__answer">
                 Это субсидия, выдаваемая на проведение исследований, образовательные и прочие некоммерческие цели.
               </p>
             </li>
             <!--3-->
             <li class="questions__item">
               <h3 class="questions__head questions__head--3">Как определяется стоимость программы?</h3>
-              <p class="questions__answer close">
+              <p class="questions__answer">
                 Полная стоимость определяется организаторами в зависимости от направления.
                 В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается
                 определённая доля личного участия.
@@ -367,21 +367,23 @@
             <!--4-->
             <li class="questions__item">
               <h3 class="questions__head questions__head--4">Что такое грант на обучение? </h3>
-              <p class="questions__answer close">
+              <p class="questions__answer">
                 Это субсидия, выдаваемая на проведение исследований, образовательные и прочие некоммерческие цели.
               </p>
             </li>
             <!--5-->
             <li class="questions__item">
-              <h3 class="questions__head questions__head--5">Признаётся ли учеба в рамках проекта для дальнейшего обучения?</h3>
-              <p class="questions__answer close">
+              <h3 class="questions__head questions__head--5">Признаётся ли учеба в рамках проекта для дальнейшего
+                обучения?</h3>
+              <p class="questions__answer">
                 Да, конечно.
               </p>
             </li>
             <!--6-->
             <li class="questions__item">
-              <h3 class="questions__head questions__head--6">Как выглдядит полный процесс регистрации на программу «Маса»? </h3>
-              <p class="questions__answer close">
+              <h3 class="questions__head questions__head--6">Как выглдядит полный процесс регистрации на программу
+                «Маса»? </h3>
+              <p class="questions__answer">
                 Полный процесс регистрации подробно описан на нашем сайте.
               </p>
             </li>
@@ -593,22 +595,41 @@
         </ul>
       </div>
       <div class="feedbacks__footer">
-        <div class="feedbacks__slider">
-          <div>
-            <button type="button">left</button>
-            <button type="button">right</button>
-          </div>
-          <p>
-            <span>3</span>
+        <div class="feedbacks__slider toggle">
+          <p class="toggle__numbers">
+            <span class="toggle__number toggle__number--left">1</span>
             <span>/</span>
-            <span>6</span>
+            <span class="toggle__number toggle__number--right">6</span>
           </p>
+
+          <div class="toggle__container">
+            <button type="button" class="toggle__button toggle__left"></button>
+            <button type="button" class="toggle__button toggle__right"></button>
+          </div>
         </div>
 
         <div class="feedbacks__icons">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+          <a href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.16">
+              <path d="M15.5378 5.18705H17.4V1.94345C17.0787 1.89925 15.9738 1.7998 14.687 1.7998C12.0021 1.7998 10.1629 3.48875 10.1629 6.59296V9.44981H7.20001V13.0759H10.1629V22.1998H13.7955V13.0768H16.6385L17.0898 9.45066H13.7946V6.95251C13.7955 5.90445 14.0776 5.18705 15.5378 5.18705Z" fill="black"></path>
+              </g>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.16">
+                <path d="M12.0025 2H11.9975C6.48375 2 2 6.485 2 12C2 14.1875 2.705 16.215 3.90375 17.8612L2.6575 21.5763L6.50125 20.3475C8.0825 21.395 9.96875 22 12.0025 22C17.5162 22 22 17.5138 22 12C22 6.48625 17.5162 2 12.0025 2ZM17.8212 16.1213C17.58 16.8025 16.6225 17.3675 15.8587 17.5325C15.3363 17.6437 14.6537 17.7325 12.3562 16.78C9.4175 15.5625 7.525 12.5763 7.3775 12.3825C7.23625 12.1887 6.19 10.8013 6.19 9.36625C6.19 7.93125 6.91875 7.2325 7.2125 6.9325C7.45375 6.68625 7.8525 6.57375 8.235 6.57375C8.35875 6.57375 8.47 6.58 8.57 6.585C8.86375 6.5975 9.01125 6.615 9.205 7.07875C9.44625 7.66 10.0337 9.095 10.1038 9.2425C10.175 9.39 10.2463 9.59 10.1462 9.78375C10.0525 9.98375 9.97 10.0725 9.8225 10.2425C9.675 10.4125 9.535 10.5425 9.3875 10.725C9.2525 10.8837 9.1 11.0538 9.27 11.3475C9.44 11.635 10.0275 12.5937 10.8925 13.3637C12.0087 14.3575 12.9137 14.675 13.2375 14.81C13.4787 14.91 13.7662 14.8863 13.9425 14.6988C14.1663 14.4575 14.4425 14.0575 14.7238 13.6638C14.9237 13.3813 15.1763 13.3462 15.4412 13.4462C15.7113 13.54 17.14 14.2462 17.4338 14.3925C17.7275 14.54 17.9212 14.61 17.9925 14.7338C18.0625 14.8575 18.0625 15.4388 17.8212 16.1213Z" fill="black"></path>
+              </g>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.16">
+                <path d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z" fill="black"></path>
+              </g>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -620,7 +641,7 @@
           <p class="head">Узнать подробности</p>
           <div class="curator__navigator">
             <p class="curator__town">Ваш город</p>
-            <p class="curator__newsib">Новосибирск</p>
+            <a class="curator__newsib">Новосибирск</a>
           </div>
           <div class="curator__data">
             <img src="img/curator-desktop.png" alt="Анна Горелик">
@@ -630,9 +651,27 @@
                 Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
               </p>
               <div class="curator__icons">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.16">
+                    <path d="M15.5378 5.18705H17.4V1.94345C17.0787 1.89925 15.9738 1.7998 14.687 1.7998C12.0021 1.7998 10.1629 3.48875 10.1629 6.59296V9.44981H7.20001V13.0759H10.1629V22.1998H13.7955V13.0768H16.6385L17.0898 9.45066H13.7946V6.95251C13.7955 5.90445 14.0776 5.18705 15.5378 5.18705Z" fill="black"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.16">
+                      <path d="M12.0025 2H11.9975C6.48375 2 2 6.485 2 12C2 14.1875 2.705 16.215 3.90375 17.8612L2.6575 21.5763L6.50125 20.3475C8.0825 21.395 9.96875 22 12.0025 22C17.5162 22 22 17.5138 22 12C22 6.48625 17.5162 2 12.0025 2ZM17.8212 16.1213C17.58 16.8025 16.6225 17.3675 15.8587 17.5325C15.3363 17.6437 14.6537 17.7325 12.3562 16.78C9.4175 15.5625 7.525 12.5763 7.3775 12.3825C7.23625 12.1887 6.19 10.8013 6.19 9.36625C6.19 7.93125 6.91875 7.2325 7.2125 6.9325C7.45375 6.68625 7.8525 6.57375 8.235 6.57375C8.35875 6.57375 8.47 6.58 8.57 6.585C8.86375 6.5975 9.01125 6.615 9.205 7.07875C9.44625 7.66 10.0337 9.095 10.1038 9.2425C10.175 9.39 10.2463 9.59 10.1462 9.78375C10.0525 9.98375 9.97 10.0725 9.8225 10.2425C9.675 10.4125 9.535 10.5425 9.3875 10.725C9.2525 10.8837 9.1 11.0538 9.27 11.3475C9.44 11.635 10.0275 12.5937 10.8925 13.3637C12.0087 14.3575 12.9137 14.675 13.2375 14.81C13.4787 14.91 13.7662 14.8863 13.9425 14.6988C14.1663 14.4575 14.4425 14.0575 14.7238 13.6638C14.9237 13.3813 15.1763 13.3462 15.4412 13.4462C15.7113 13.54 17.14 14.2462 17.4338 14.3925C17.7275 14.54 17.9212 14.61 17.9925 14.7338C18.0625 14.8575 18.0625 15.4388 17.8212 16.1213Z" fill="black"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.16">
+                      <path d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z" fill="black"></path>
+                    </g>
+                  </svg>
+                </a>
               </div>
             </div>
             <p class="curator__description">
@@ -652,12 +691,12 @@
           <p class="contacts__p2">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт
             спам от нас!</p>
         </div>
-        <form action="">
-          <label for="">
-            <input type="text">
+        <form class="contacts__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" autocomplete="off">
+          <label for="name">
+            <input class="got-it__input" id="name" type="text" required="" name="name" placeholder="имя">
           </label>
-          <label for="">
-            <input type="tel">
+          <label for="phone">
+            <input class="got-it__input phone" id="phone" type="tel" name="phone" placeholder="+7 (923) 41" required="">
           </label>
           <button class="gradient-button" type="submit">Позвоните мне</button>
         </form>
@@ -716,6 +755,7 @@
   <script src="js/mask.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/accordeon.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>

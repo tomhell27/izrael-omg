@@ -56,7 +56,7 @@
   color: $color-hover;
 }
 
-.questions__head::after {
+.questions__head--passive::after {
   content: "";
   width: 15px;
   height: 8px;

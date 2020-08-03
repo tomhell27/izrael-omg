@@ -41,17 +41,19 @@
 .feedback__list {
   display: flex;
   width: 6504px;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 50%;
 }
 
 .feedback__list-wrap {
   width: 1084px;
   margin: 0 auto;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 .feedback__item {
   width: 1084px;
+  scroll-snap-align: center;
 }
 
 .feedbacks__footer {

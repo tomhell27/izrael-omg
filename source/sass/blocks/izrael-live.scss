@@ -44,6 +44,7 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+
 }
 
 .izrael-live__item {
@@ -72,17 +73,19 @@
 @media (max-width: $tablet-width) {
   .izrael-live__advantage-wrap {
     width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   .izrael-live__advantage {
     flex-wrap: nowrap;
     width: 1500px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50%;
   }
 
   .izrael-live__item {
     height: 400px;
+    scroll-snap-align: center;
   }
 
   .izrael-live__item--girls {
