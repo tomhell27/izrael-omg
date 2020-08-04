@@ -12,11 +12,12 @@
   width: 860px;
   height: auto;
   z-index: -1;
-  top: -160px;
-  right: -30px;
+  top: -170px;
+  right: -25px;
 }
 
 .want-to-go__p {
+  width: 400px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -32,13 +33,15 @@
 
 .want-to-go__action {
   position: relative;
-  margin-bottom: 320px;
+  margin-bottom: 230px;
+  margin-top: 65px;
 }
 
 .want-to-go__action button {
+  width: 220px;
   position: relative;
   top: -60px;
-  left: 230px;
+  left: 260px;
   border: none;
 }
 
@@ -59,6 +62,11 @@
 
 .want-to-go__form {
   width: 477px;
+}
+
+.want-to-go__head {
+  margin-top: 45px;
+  margin-bottom: 25px;
 }
 
 @media (max-width: $tablet-width) {

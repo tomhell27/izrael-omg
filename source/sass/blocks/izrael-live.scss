@@ -14,8 +14,8 @@
 
 .izrael-live__head {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  left: 25px;
+  bottom: 10px;
   width: calc(100% - 80px);
   color: $color-white;
   font-family: $font-raleway;
@@ -29,9 +29,12 @@
 .izrael-live__wrap {
   width: calc(100% - 210px);
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 
 .izrael-live__h2 {
+  margin-bottom: 25px;
+  margin-top: 45px;
   text-align: center;
 }
 
@@ -44,7 +47,8 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-
+  margin-top: 0;
+  padding-left: 0;
 }
 
 .izrael-live__item {
@@ -56,18 +60,32 @@
 
 .izrael-live__item--girls {
   position: absolute;
-  top: 350px;
-  right: 200px;
+  top: 390px;
+  right: 250px;
 }
 
 .izrael-live__item--sun {
   position: absolute;
-  top: 350px;
+  top: 390px;
   right: 0;
 }
 
 .izrael-live__scroll {
   display: none;
+}
+
+.izrael-live__item--history {
+  bottom: 20px;
+}
+
+.izrael-live__item--language {
+  top: 40px;
+  left: 10px;
+}
+
+.izrael-live__item--study {
+  top: 40px;
+  left: 40px;
 }
 
 @media (max-width: $tablet-width) {

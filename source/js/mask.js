@@ -5,6 +5,8 @@
   var formPhoneInput = form.querySelector('.phone');
   var header = document.querySelector('.got-it__form');
   var phoneInput = header.querySelector('.phone');
+  var callForm = document.querySelector('.contacts__form');
+  var callFormInput = callForm.querySelector('.phone');
 
   var getMask = function (el) {
     el.addEventListener('keydown', function (event) {
@@ -35,4 +37,10 @@
 
   getMask(phoneInput);
   getMask(formPhoneInput);
+  getMask(callFormInput);
+
+  window.mask = {
+    form: form,
+    callForm: callForm
+  };
 })();

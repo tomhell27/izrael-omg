@@ -40,6 +40,7 @@
 }
 
 .how-to-go__p {
+  width: 480px;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -52,9 +53,12 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 170%;
+  margin-top: 35px;
+  width: 450px;
 }
 
 .how-to-go__p3 {
+  margin-top: 50px;
   padding-left: 16px;
   border-left: 3px $color-hover solid;
   font-style: normal;
@@ -67,7 +71,7 @@
 .how-to-go__item {
   width: 396px;
   height: 36px;
-  padding-left: 24px;
+  padding-left: 44px;
   margin-bottom: 40px;
   font-style: normal;
   font-weight: normal;
@@ -82,7 +86,7 @@
   padding-top: 10px;
   z-index: 15;
   left: -26px;
-  top: -6px;
+  top: -10px;
   color: $color-hover;
   font-weight: bold;
   font-size: 17px;
@@ -115,14 +119,19 @@
 }
 
 .how-to-go__conditions {
+  margin-top: 30px;
   padding: 0;
   border-left: 1px dashed $color-border-dashed;
 }
 
 .how-to-go__description {
-  width: 552px;
+  width: 538px;
+  padding-left: 20px;
 }
 
+.how-to-go__head {
+  margin-bottom: 20px;
+}
 
 @media (max-width: $tablet-width) {
   .how-to-go__wrap {

@@ -25,7 +25,7 @@
     </nav>
     <!--Главный экран-->
     <section class="header__photo">
-
+      <h1 class="visually-hidden">Израиль учеба, работа, проживание, путешествие</h1>
       <picture>
         <source type="image/webp" media="(max-width: 767px)" srcset="img/izrael-mobile.webp, img/izrael-mobile@2x.webp 2x">
         <source type="image/webp" srcset="img/izrael-desktop.webp, img/izrael-desktop@2x.webp 2x">
@@ -48,7 +48,7 @@
 
     </section>
     <section class="header__scroll">
-      <h1 class="header__head">Учёба, путешествие и карьера для еврейской молодёжи</h1>
+      <h2 class="header__head">Учёба, путешествие и карьера для еврейской молодёжи</h2>
       <a class="header__hint" href="#about"></a>
     </section>
   </header>
@@ -60,6 +60,8 @@
         <p>
           «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.
           Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.
+          </p>
+          <p class="about-program__p2">
           В течение освоения программ предусмотрен грант от 4200 до 8400$.
         </p>
         <div class="about-program__img">
@@ -122,7 +124,7 @@
                 Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и
                 творческого исследования.
               </p>
-              <p class="programs__p">
+              <p class="programs__p programs__p2">
                 Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной
                 религии,
                 законодательного и делового администрирования или искусства?
@@ -176,7 +178,7 @@
       <div class="want-to-go__wrap">
         <h2 class="visually-hidden">Обратная связь</h2>
         <div class="want-to-go__form">
-          <p class="head">Хочу поехать!</p>
+          <p class="head want-to-go__head">Хочу поехать!</p>
           <p class="want-to-go__p">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все
             вопросы!
           </p>
@@ -207,7 +209,7 @@
           <img src="img/img-go-desktop.png" alt="Девушка с парнем улыбаются">
         </div>
         <div class="how-to-go__description">
-          <h2 class="head">Как поехать</h2>
+          <h2 class="head how-to-go__head">Как поехать</h2>
           <p class="how-to-go__p">
             Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе.
             Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.
@@ -239,7 +241,7 @@
         </p>
         <div class="izrael-live__advantage-wrap">
           <ul class="izrael-live__advantage">
-            <li id="history" class="izrael-live__item">
+            <li id="history" class="izrael-live__item izrael-live__item--history">
 
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/history-mobile.webp, img/history-mobile@2x.webp 2x">
@@ -253,7 +255,7 @@
 
               <h3 class="izrael-live__head">Экскурсии по Израилю и знакомство с его историей</h3>
             </li>
-            <li id="language" class="izrael-live__item">
+            <li id="language" class="izrael-live__item izrael-live__item--language">
 
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/language-mobile.webp, img/language-mobile@2x.webp 2x">
@@ -267,7 +269,7 @@
 
               <h3 class="izrael-live__head">Изучение иврита</h3>
             </li>
-            <li id="study" class="izrael-live__item">
+            <li id="study" class="izrael-live__item izrael-live__item--study">
 
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/study-mobile.webp, img/study-mobile@2x.webp 2x">
@@ -312,7 +314,7 @@
           </ul>
         </div>
         <ul class="izrael-live__scroll">
-          <li class="izrael-live__li izrael-live__li--active"><a class="izrael-live__a--active" href="#history"></a>
+          <li class="izrael-live__li izrael-live__li--active"><a class="izraell-live__a izrael-live__a--active" href="#history"></a>
           </li>
           <li class="izrael-live__li"><a href="#language"></a></li>
           <li class="izrael-live__li"><a href="#study"></a></li>
@@ -326,7 +328,7 @@
       <h2 class="visually-hidden">Фотогалерея</h2>
       <div class="galery__wrap">
         <div class="galery__container">
-          <p class="head">#masaisrael</p>
+          <p class="head galery__head">#masaisrael</p>
           <p class="galery__p">
             Познакомьтесь с программой от первого лица!
             Многие участники ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.
@@ -339,25 +341,31 @@
     <section class="questions">
       <div class="questions__wrap">
         <div class="questions__container">
-          <h2 class="head">Частые вопросы</h2>
+          <h2 class="head questions__h">Частые вопросы</h2>
           <ul class="questions__list">
             <!--1-->
             <li class="questions__item">
-              <h3 class="questions__head questions__head--1">Кто организатор? Какие сроки у программы?</h3>
+              <h3 class="questions__head questions__head--1">
+                <span class="questions__span">Кто организатор? Какие сроки у программы?</span>
+              </h3>
               <p class="questions__answer">
                 Программа расчитана на три года и организуется посредством "«Маса Израиль»
               </p>
             </li>
             <!--2-->
             <li class="questions__item">
-              <h3 class="questions__head questions__head--2">Что такое грант на обучение? </h3>
+              <h3 class="questions__head questions__head--2">
+                <span class="questions__span">Что такое грант на обучение?</span>
+              </h3>
               <p class="questions__answer">
                 Это субсидия, выдаваемая на проведение исследований, образовательные и прочие некоммерческие цели.
               </p>
             </li>
             <!--3-->
             <li class="questions__item">
-              <h3 class="questions__head questions__head--3">Как определяется стоимость программы?</h3>
+              <h3 class="questions__head questions__head--3">
+                <span class="questions__span">Как определяется стоимость программы?</span>
+              </h3>
               <p class="questions__answer">
                 Полная стоимость определяется организаторами в зависимости от направления.
                 В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается
@@ -366,23 +374,27 @@
             </li>
             <!--4-->
             <li class="questions__item">
-              <h3 class="questions__head questions__head--4">Что такое грант на обучение? </h3>
+              <h3 class="questions__head questions__head--4">
+                <span class="questions__span">Что такое грант на обучение?</span>
+              </h3>
               <p class="questions__answer">
                 Это субсидия, выдаваемая на проведение исследований, образовательные и прочие некоммерческие цели.
               </p>
             </li>
             <!--5-->
             <li class="questions__item">
-              <h3 class="questions__head questions__head--5">Признаётся ли учеба в рамках проекта для дальнейшего
-                обучения?</h3>
+              <h3 class="questions__head questions__head--5">
+                <span class="questions__span">Признаётся ли учеба в рамках проекта для дальнейшего обучения?</span>
+              </h3>
               <p class="questions__answer">
                 Да, конечно.
               </p>
             </li>
             <!--6-->
             <li class="questions__item">
-              <h3 class="questions__head questions__head--6">Как выглдядит полный процесс регистрации на программу
-                «Маса»? </h3>
+              <h3 class="questions__head questions__head--6">
+                <span class="questions__span">Как выглдядит полный процесс регистрации на программу «Маса»?</span>
+              </h3>
               <p class="questions__answer">
                 Полный процесс регистрации подробно описан на нашем сайте.
               </p>
@@ -404,7 +416,7 @@
     </section>
     <!--Отзывы-->
     <section class="feedback">
-      <h2 class="head">Отзывы</h2>
+      <h2 class="head feedback__head">Отзывы</h2>
       <div class="feedback__list-wrap">
         <ul class="feedback__list">
           <!--1-->
@@ -498,7 +510,7 @@
             </div>
             <div class="feedback__block-wrap">
               <blockquote class="feedback__block">
-                <cite class="feedback__name">Ольга Михайлов 3</cite>
+                <cite class="feedback__name">Ольга Михайловa 3</cite>
                 <dl>
                   <dt class="feedback__dt">Программа</dt>
                   <dd class="feedback__dd">Арт-Тель, февраль-сетнябрь 2017</dd>
@@ -609,7 +621,7 @@
             </div>
             <div class="feedback__block-wrap">
               <blockquote class="feedback__block">
-                <cite class="feedback__name">Ольга Михайлов 6</cite>
+                <cite class="feedback__name">Ольга Михайловa 6</cite>
                 <dl>
                   <dt class="feedback__dt">Программа</dt>
                   <dd class="feedback__dd">Арт-Тель, февраль-сетнябрь 2017</dd>
@@ -631,8 +643,8 @@
           </li>
         </ul>
       </div>
-      <div class="feedbacks__footer">
-        <div class="feedbacks__slider toggle">
+      <div class="feedback__footer">
+        <div class="feedback__slider toggle">
           <p class="toggle__numbers">
             <span class="toggle__number toggle__number--left">1</span>
             <span>/</span>
@@ -645,11 +657,11 @@
           </div>
         </div>
 
-        <div class="feedbacks__icons">
+        <div class="feedback__icons">
           <a href="#">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.16">
-              <path d="M15.5378 5.18705H17.4V1.94345C17.0787 1.89925 15.9738 1.7998 14.687 1.7998C12.0021 1.7998 10.1629 3.48875 10.1629 6.59296V9.44981H7.20001V13.0759H10.1629V22.1998H13.7955V13.0768H16.6385L17.0898 9.45066H13.7946V6.95251C13.7955 5.90445 14.0776 5.18705 15.5378 5.18705Z" fill="black"></path>
+                <path d="M15.5378 5.18705H17.4V1.94345C17.0787 1.89925 15.9738 1.7998 14.687 1.7998C12.0021 1.7998 10.1629 3.48875 10.1629 6.59296V9.44981H7.20001V13.0759H10.1629V22.1998H13.7955V13.0768H16.6385L17.0898 9.45066H13.7946V6.95251C13.7955 5.90445 14.0776 5.18705 15.5378 5.18705Z" fill="black"></path>
               </g>
             </svg>
           </a>
@@ -691,7 +703,7 @@
                 <a href="#">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.16">
-                    <path d="M15.5378 5.18705H17.4V1.94345C17.0787 1.89925 15.9738 1.7998 14.687 1.7998C12.0021 1.7998 10.1629 3.48875 10.1629 6.59296V9.44981H7.20001V13.0759H10.1629V22.1998H13.7955V13.0768H16.6385L17.0898 9.45066H13.7946V6.95251C13.7955 5.90445 14.0776 5.18705 15.5378 5.18705Z" fill="black"></path>
+                      <path d="M15.5378 5.18705H17.4V1.94345C17.0787 1.89925 15.9738 1.7998 14.687 1.7998C12.0021 1.7998 10.1629 3.48875 10.1629 6.59296V9.44981H7.20001V13.0759H10.1629V22.1998H13.7955V13.0768H16.6385L17.0898 9.45066H13.7946V6.95251C13.7955 5.90445 14.0776 5.18705 15.5378 5.18705Z" fill="black"></path>
                     </g>
                   </svg>
                 </a>
@@ -730,24 +742,46 @@
         </div>
         <form class="contacts__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" autocomplete="off">
           <label for="name">
-            <input class="got-it__input" id="name" type="text" required="" name="name" placeholder="имя">
+            <input class="contacts__input" id="name" type="text" required="" name="name" placeholder="имя">
           </label>
           <label for="phone">
-            <input class="got-it__input phone" id="phone" type="tel" name="phone" placeholder="+7 (923) 41" required="">
+            <input class="contacts__input phone" id="phone" type="tel" name="phone" placeholder="+7 (923) 41" required="">
           </label>
-          <button class="gradient-button" type="submit">Позвоните мне</button>
+          <button class="gradient-button contacts__button" type="submit">Перезвоните мне</button>
         </form>
       </div>
     </section>
   </main>
+  <!--Подвал-->
   <footer class="footer">
     <section class="footer__wrap">
+      <h2 class="visually-hidden">Копирайт</h2>
       <img src="img/logo-shadow.svg" alt="логотип">
       <p class="footer__p"> Copyright someDesignCompany ©2019</p>
       <div class="footer__icons">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.16">
+              <path d="M15.5378 5.18705H17.4V1.94345C17.0787 1.89925 15.9738 1.7998 14.687 1.7998C12.0021 1.7998 10.1629 3.48875 10.1629 6.59296V9.44981H7.20001V13.0759H10.1629V22.1998H13.7955V13.0768H16.6385L17.0898 9.45066H13.7946V6.95251C13.7955 5.90445 14.0776 5.18705 15.5378 5.18705Z" fill="black"></path>
+            </g>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.16">
+              <path d="M12.0025 2H11.9975C6.48375 2 2 6.485 2 12C2 14.1875 2.705 16.215 3.90375 17.8612L2.6575 21.5763L6.50125 20.3475C8.0825 21.395 9.96875 22 12.0025 22C17.5162 22 22 17.5138 22 12C22 6.48625 17.5162 2 12.0025 2ZM17.8212 16.1213C17.58 16.8025 16.6225 17.3675 15.8587 17.5325C15.3363 17.6437 14.6537 17.7325 12.3562 16.78C9.4175 15.5625 7.525 12.5763 7.3775 12.3825C7.23625 12.1887 6.19 10.8013 6.19 9.36625C6.19 7.93125 6.91875 7.2325 7.2125 6.9325C7.45375 6.68625 7.8525 6.57375 8.235 6.57375C8.35875 6.57375 8.47 6.58 8.57 6.585C8.86375 6.5975 9.01125 6.615 9.205 7.07875C9.44625 7.66 10.0337 9.095 10.1038 9.2425C10.175 9.39 10.2463 9.59 10.1462 9.78375C10.0525 9.98375 9.97 10.0725 9.8225 10.2425C9.675 10.4125 9.535 10.5425 9.3875 10.725C9.2525 10.8837 9.1 11.0538 9.27 11.3475C9.44 11.635 10.0275 12.5937 10.8925 13.3637C12.0087 14.3575 12.9137 14.675 13.2375 14.81C13.4787 14.91 13.7662 14.8863 13.9425 14.6988C14.1663 14.4575 14.4425 14.0575 14.7238 13.6638C14.9237 13.3813 15.1763 13.3462 15.4412 13.4462C15.7113 13.54 17.14 14.2462 17.4338 14.3925C17.7275 14.54 17.9212 14.61 17.9925 14.7338C18.0625 14.8575 18.0625 15.4388 17.8212 16.1213Z" fill="black"></path>
+            </g>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.16">
+              <path d="M12 8.3999C10.0149 8.3999 8.40002 10.0148 8.40002 11.9999C8.40002 13.985 10.0149 15.5999 12 15.5999C13.9852 15.5999 15.6 13.985 15.6 11.9999C15.6 10.0148 13.9852 8.3999 12 8.3999Z" fill="black"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40002 17.6106V6.3892C2.40002 4.18596 4.18608 2.3999 6.38932 2.3999H17.6107C19.814 2.3999 21.6 4.18596 21.6 6.3892V17.6106C21.6 19.8138 19.814 21.5999 17.6107 21.5999H6.38932C4.18608 21.5999 2.40002 19.8138 2.40002 17.6106ZM6.55995 9.96611C4.926 14.7018 9.29815 19.0739 14.0338 17.44C15.63 16.8894 16.8896 15.6299 17.4401 14.0338C19.074 9.29803 14.7019 4.92588 9.96612 6.55982C8.37002 7.11037 7.11049 8.37002 6.55995 9.96611ZM18 6.59993C18.6628 6.59993 19.2 6.06268 19.2 5.39993C19.2 4.73719 18.6628 4.19993 18 4.19993C17.3373 4.19993 16.8 4.73719 16.8 5.39993C16.8 6.06268 17.3373 6.59993 18 6.59993Z" fill="black"></path>
+            </g>
+          </svg>
+
+        </a>
       </div>
     </section>
 
@@ -762,11 +796,11 @@
         поможем найти ответ на ваш вопрос!
       </p>
       <form class="got-it__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" autocomplete="off">
-        <label for="name">
-          <input class="got-it__input" id="name" type="text" required="" name="name" placeholder="имя">
+        <label for="name1">
+          <input class="got-it__input" id="name1" type="text" required="" name="name" placeholder="имя">
         </label>
-        <label for="phone">
-          <input class="got-it__input phone" id="phone" type="tel" name="phone" placeholder="телефон" required="">
+        <label for="phone2">
+          <input class="got-it__input phone" id="phone2" type="tel" name="phone" placeholder="телефон" required="">
         </label>
         <button class="gradient-button got-it__gradient" type="submit">Перезвоните мне</button>
         <div class="got-it__check-container">
@@ -793,6 +827,7 @@
   <script src="js/tabs.js"></script>
   <script src="js/accordeon.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/post.js"></script>
 </body>
 
 </html>

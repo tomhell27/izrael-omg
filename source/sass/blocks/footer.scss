@@ -2,6 +2,7 @@
   border-top: solid 1px $color-border;
 }
 .footer__p {
+  padding-left: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -10,14 +11,25 @@
 }
 
 .footer__wrap {
+  width: calc(100% - 210px);
+  margin: 0 auto;
+  max-width: 1366px;
+  min-width: 750px;
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 115px;
+  padding-right: 10px;
 }
 
 @media (max-width: $tablet-width) {
-
 }
 
 @media (max-width: $mobile-width) {
-
 }

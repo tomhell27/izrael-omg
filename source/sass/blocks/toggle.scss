@@ -1,5 +1,8 @@
 .toggle {
   display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .toggle__button {
@@ -19,4 +22,8 @@
   background-image: url(../img/right.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.toggle__numbers {
+  margin: 0;
 }

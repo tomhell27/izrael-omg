@@ -9,6 +9,8 @@
   var modal = document.querySelector('.got-it');
   var form = modal.querySelector('.got-it__form');
   var closeButton = modal.querySelector('.got-it__button');
+
+
   var name = modal.querySelector('[name=name]');
   var phone = modal.querySelector('[name=phone]');
 
@@ -22,6 +24,7 @@
   } catch (err) {
     isStorageSupport = false;
   }
+
 
   form.addEventListener('submit', function (evt) {
     if (!name.value || !phone.value) {

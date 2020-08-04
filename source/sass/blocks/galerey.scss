@@ -2,7 +2,8 @@
   background-image: url(../img/galery-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position-x: -10px;
+  background-position-y: 10px;
   padding-top: 120px;
   padding-bottom: 196px;
 
@@ -30,15 +31,17 @@ margin: 0 auto;
 }
 
 .galery__container {
-  width: 430px;
+  width: 400px;
+  padding-left: 30px;
 }
 
 .galery__button {
-  width: 190px;
+  width: 160px;
   height: 40px;
+  margin-top: 50px;
   position: relative;
   display: block;
-  padding-left: 60px;
+  padding-left: 70px;
   padding-top: 18px;
   color: $color-white;
   font-style: normal;
@@ -68,10 +71,15 @@ margin: 0 auto;
   width: 24px;
   height: 24px;
   top: 15px;
-  left: 20px;
+  left: 40px;
   background-image: url(../img/galery.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.galery__head {
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 @media (max-width: $tablet-width) {

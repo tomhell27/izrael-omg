@@ -1,0 +1,8 @@
+.input-style__error {
+  border: 1px $color-error solid;
+}
+
+.input-style__correct {
+  opacity: 1;
+  border: 1px $color-font solid;
+}

@@ -1,3 +1,7 @@
+.feedback {
+  padding-top: 160px;
+}
+
 .feedback__name {
   font-style: normal;
   font-weight: 500;
@@ -54,13 +58,19 @@
 .feedback__item {
   width: 1084px;
   scroll-snap-align: center;
+  display: flex;
 }
 
-.feedbacks__footer {
+.feedback__footer {
   width: 1084px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+.feedback__head {
+  width: 200px;
+  margin: 0 auto;
 }
 
 @media (max-width: $tablet-width) {

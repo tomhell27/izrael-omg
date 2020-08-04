@@ -8,6 +8,10 @@ a {
   cursor: pointer;
 }
 
+section {
+  overflow: hidden;
+}
+
 input {
   border: none;
   border-radius: 0;
@@ -21,7 +25,8 @@ input:hover {
 }
 
 input:focus {
-  opacity: 0.5;
+  opacity: 1;
+  border: 1px $color-hover solid;
 }
 
 button {

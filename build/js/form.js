@@ -5,8 +5,8 @@
   var ENTER_KEY = 'Enter';
   var wantGo = document.querySelector('.want-to-go');
   var form = wantGo.querySelector('.want-to-go__form');
+  var callForm = document.querySelector('.contacts__form');
 
-  var phone = form.querySelector('[name=phone]');
   var callMe = document.querySelector('.call-me');
   var button = callMe.querySelector('.call-me__button');
   var ok = callMe.querySelector('.call-me__gradient');
@@ -54,13 +54,19 @@
     }
   });
 
-  form.addEventListener('submit', function (evt) {
-    evt.preventDefault();
-    if (!phone.value) {
-      phone.classlist.add('modal__error');
-    } else {
-      showModal();
-    }
-  });
+  var goModal = function (el) {
+    el.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+      var phone = el.querySelector('[name=phone]');
+      if (!phone.value) {
+        phone.classlist.add('modal__error');
+      } else {
+        showModal();
+      }
+    });
+  };
+
+  goModal(form);
+  goModal(callForm);
 
 })();
