@@ -1,7 +1,8 @@
 .want-to-go {
+  overflow: visible;
   position: relative;
   z-index: 50;
-  background-image: url(../img/bag-desktop.png);
+  background-image: url("../img/bag-desktop.png");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
@@ -69,8 +70,25 @@
   margin-bottom: 25px;
 }
 
-@media (max-width: $tablet-width) {
+.want-to-go__picture {
+  width: 100%;
+  height: auto;
+}
 
+@media (max-width: $tablet-width) {
+  .want-to-go__img {
+    top: auto;
+    right: auto;
+    width: auto;
+  }
+
+  .want-to-go__form {
+    padding-left: 20px;
+  }
+
+  .want-to-go__action {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -82,8 +100,10 @@
   }
 
   .want-to-go__form {
-    width: 288px;
+    width: calc(100% - 20px);
+    max-width: 500px;
     margin: 0 auto;
+    padding-left: 0;
   }
 
   .want-to-go__img {
@@ -95,15 +115,34 @@
 
   .want-to-go__action {
     margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .want-to-go__button {
+    width: 260px;
+    margin-left: 0;
   }
 
   .want-to-go__action button {
     position: static;
     margin: 0 auto;
+    width: 270px;
   }
 
   .want-to-go__action input {
     width: 247px;
     margin-bottom: 5px;
+  }
+
+  .want-to-go__head {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  .want-to-go__p {
+    width: 290px;
   }
 }

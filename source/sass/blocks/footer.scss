@@ -1,6 +1,8 @@
 .footer {
   border-top: solid 1px $color-border;
+  margin-bottom: 0;
 }
+
 .footer__p {
   padding-left: 30px;
   font-style: normal;
@@ -28,8 +30,28 @@
   padding-right: 10px;
 }
 
-@media (max-width: $tablet-width) {
-}
-
 @media (max-width: $mobile-width) {
+  .footer__wrap {
+    flex-direction: column;
+    width: 250px;
+    min-width: 250px;
+    padding-top: 40px;
+  }
+
+  .footer__icons {
+    width: 130px;
+    margin-top: 20px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__p {
+    margin-top: 25px;
+  }
+
+  .footer__icon {
+    width: 32px;
+    height: 32px;
+  }
 }

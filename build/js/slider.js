@@ -12,7 +12,7 @@
   var index = 0;
 
   var changeFeedback = function () {
-    feedbacks[index].style.display = 'block';
+    feedbacks[index].style.display = 'flex';
   };
 
   var changeNumber = function () {

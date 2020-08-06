@@ -1,12 +1,16 @@
 .about-program {
   position: relative;
-  background-image: url(../img/watercolor-program-desktop.png);
+  background-image: url("../img/watercolor-program-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background: url("../img/watercolor-program-desktop@2x.png") no-repeat;
+  }
 }
 
-.about-program p {
+.about-program__p {
   width: 720px;
   margin: auto;
   font-family: $font-fira;
@@ -17,7 +21,7 @@
   text-align: center;
 }
 
-.about-program__p2 {
+.about-program__p--2 {
   margin-top: 0;
 }
 
@@ -44,7 +48,7 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  background-image: url(../img/play-button.svg);
+  background-image: url("../img/play-button.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -54,7 +58,7 @@
 
 .about-program__button:hover {
   opacity: 1;
-  background-image: url(../img/play-button-hover.svg);
+  background-image: url("../img/play-button-hover.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -62,7 +66,7 @@
 
 .about-program__button:active {
   opacity: 1;
-  background-image: url(../img/play-button-active.svg);
+  background-image: url("../img/play-button-active.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -88,7 +92,6 @@
     width: 100%;
     margin: auto;
   }
-
 }
 
 @media (max-width: $mobile-width) {
@@ -99,13 +102,14 @@
 
   .about-program__img {
     max-width: 500px;
+    margin-top: 50px;
   }
 
-  .about-program p {
+  .about-program__p {
     width: calc(100% - 20px);
     min-width: 300px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -116,5 +120,9 @@
   .about-program__button {
     width: 80px;
     height: 80px;
+  }
+
+  .about-program__p--2 {
+    margin-top: 0;
   }
 }

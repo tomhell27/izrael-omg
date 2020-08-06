@@ -3,7 +3,7 @@
   height: auto;
   max-height: 830px;
   overflow: hidden;
-  background-image: url(../img/head-photo-desktop.png);
+  background-image: url("../img/head-photo-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -78,14 +78,14 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .header__hint::before {
   content: "";
   width: 75px;
   height: 132px;
-  background-image: url(../img/scroll.svg);
+  background-image: url("../img/scroll.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -104,6 +104,7 @@
 .header__scroll {
   position: relative;
   bottom: 300px;
+  overflow: visible;
 }
 
 @media (max-width: $tablet-width) {
@@ -141,7 +142,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .header__phone {
     margin-bottom: 10px;
     font-style: normal;
@@ -188,7 +188,7 @@
   }
 
   .header__scroll {
-    bottom: 180px;
+    bottom: 295px;
   }
 
   .header__photo {
@@ -200,7 +200,7 @@
 
 @media (max-width: $good-look-width) {
   .header {
-    background-image: url(../img/head-photo-mobile.png);
+    background-image: url("../img/head-photo-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -5,15 +5,15 @@
 }
 
 .got-it__wrap {
- width: 380px;
- position: relative;
- background-color: $color-white;
- margin: 0 auto;
- overflow: hidden;
- padding-top: 26px;
- padding-bottom: 40px;
- padding-left: 48px;
- padding-right: 48px;
+  width: 380px;
+  position: relative;
+  background-color: $color-white;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 26px;
+  padding-bottom: 40px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .got-it__input {
@@ -95,9 +95,9 @@
     padding-bottom: 40px;
     padding-left: 16px;
     padding-right: 16px;
-   }
+  }
 
-   .got-it__input {
+  .got-it__input {
     width: calc(100% - 40px);
-   }
+  }
 }

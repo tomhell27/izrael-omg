@@ -1,6 +1,6 @@
 .questions {
   position: relative;
-  background-image: url(../img/watercolor-questions-desktop.png);
+  background-image: url("../img/watercolor-questions-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -13,7 +13,7 @@
   content: "";
   width: 194px;
   height: 177px;
-  background-image: url(../img/bag-desktop.png);
+  background-image: url("../img/bag-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -21,7 +21,7 @@
   left: 0;
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-    background: url("../img/bag-desktopp@2x.png") no-repeat;
+    background: url("../img/bag-desktop@2x.png") no-repeat;
   }
 }
 
@@ -45,6 +45,7 @@
 }
 
 .questions__item {
+  width: 560px;
   border-bottom: 1px $color-border-dashed solid;
 }
 
@@ -68,13 +69,13 @@
   position: absolute;
   right: 34px;
   top: 35px;
-  background-image: url(../img/down.svg);
+  background-image: url("../img/down.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .questions__head--active::after {
-  background-image: url(../img/up.svg);
+  background-image: url("../img/up.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -96,15 +97,11 @@
 }
 
 .questions__head--5::before {
- content: "5";
+  content: "5";
 }
 
 .questions__head--6::before {
   content: "6";
-}
-
-.questions__item {
-  width: 560px;
 }
 
 .questions__answer {
@@ -141,9 +138,43 @@
 }
 
 @media (max-width: $tablet-width) {
+  .questions__img-wrap {
+    display: none;
+  }
 
+  .questions__container {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: $mobile-width) {
+  .questions__h {
+    width: 290px;
+    text-align: center;
+    margin: 0 auto;
+  }
 
+  .questions__wrap {
+    width: 310px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .questions__item {
+    width: 290px;
+  }
+
+  .questions__span {
+    width: 230px;
+    display: block;
+  }
+
+  .questions__head {
+    padding-top: 20px;
+  }
+
+  .questions__head::before {
+    left: 10px;
+  }
 }

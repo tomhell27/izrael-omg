@@ -1,7 +1,7 @@
 .how-to-go {
   position: relative;
   overflow: hidden;
-  background-image: url(../img/watercolor-go-desktop.png);
+  background-image: url("../img/watercolor-go-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -11,7 +11,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  background-image: url(../img/stamp-desktop.png);
+  background-image: url("../img/stamp-desktop.png");
   background-repeat: no-repeat;
   top: 0;
   right: 0;
@@ -93,7 +93,7 @@
   line-height: 170%;
   width: 45px;
   height: 45px;
-  background-image: url(../img/ellipse.svg);
+  background-image: url("../img/ellipse.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -135,7 +135,8 @@
 
 @media (max-width: $tablet-width) {
   .how-to-go__wrap {
-    min-width: 760;
+    width: 100%;
+    min-width: 760px;
     justify-content: center;
   }
 
@@ -144,7 +145,7 @@
   }
 
   .how-to-go__description {
-    width: 100%;
+    width: 500px;
   }
 
   .how-to-go__item {
@@ -153,8 +154,65 @@
 }
 
 @media (max-width: $mobile-width) {
+  .how-to-go {
+    padding-top: 50px;
+  }
+
   .how-to-go__wrap {
+    width: 100%;
     min-width: 320px;
+    margin-bottom: 0;
     justify-content: center;
+  }
+
+  .how-to-go__description {
+    width: calc(100% - 20px);
+    padding-left: 0;
+  }
+
+  .how-to-go__head {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .how-to-go__p {
+    width: 290px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    opacity: 0.87;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .how-to-go__p2 {
+    margin-top: 20px;
+    width: 286px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .how-to-go__p3 {
+    margin-top: 0;
+  }
+
+  .how-to-go__item {
+    width: 240px;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+  }
+
+  .how-to-go__conditions {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 30px;
   }
 }

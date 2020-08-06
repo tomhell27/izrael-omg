@@ -1,15 +1,22 @@
 .izrael-live {
-  background-image: url(../img/watercolor-live-desktop.png);
+  background-image: url("../img/watercolor-live-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.izrael-live__br {
+  display: none;
+}
+
 .izrael-live__p {
+  text-align: left;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 170%;
   opacity: 0.87;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .izrael-live__head {
@@ -23,11 +30,11 @@
   font-weight: 800;
   font-size: 21px;
   line-height: 25px;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .izrael-live__wrap {
-  width: calc(100% - 210px);
+  width: 1152px;
   margin: 0 auto;
   margin-bottom: 120px;
 }
@@ -36,11 +43,6 @@
   margin-bottom: 25px;
   margin-top: 45px;
   text-align: center;
-}
-
-.izrael-live__p {
-  width: 720px;
-  margin: 0 auto;
 }
 
 .izrael-live__advantage {
@@ -88,9 +90,38 @@
   left: 40px;
 }
 
+@media (max-width: $live-good-width) {
+  .izrael-live__wrap {
+    width: 1020px;
+  }
+
+  .izrael-live__item--girls {
+    position: absolute;
+    top: 390px;
+    right: 160px;
+  }
+
+  .izrael-live__item--sun {
+    right: -50px;
+  }
+
+  .izrael-live__item--language {
+    right: 0;
+    left: -20px;
+  }
+
+  .izrael-live__item--study {
+    position: absolute;
+    left: 670px;
+    top: 40px;
+    width: 320px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .izrael-live__advantage-wrap {
-    width: 100%;
+    width: 600px;
+    margin: 0 auto;
     overflow: hidden;
   }
 
@@ -102,15 +133,9 @@
   }
 
   .izrael-live__item {
+    width: 300px;
     height: 400px;
     scroll-snap-align: center;
-  }
-
-  .izrael-live__item--girls {
-    position: static;
-  }
-
-  .izrael-live__item--sun {
     position: static;
   }
 
@@ -122,18 +147,74 @@
 
     a {
       display: block;
-      width: 6px;
-      height: 6px;
+      width: 8px;
+      height: 8px;
       border-radius: 40px;
-      background-color: $color-font;
+      background-color: #484848;
+      opacity: 0.2;
     }
   }
 
   .izrael-live__a--active {
-      background-color: $color-hover;
+    background-color: $color-hover;
+  }
+
+  .izrael-live__head {
+    position: relative;
+    bottom: 160px;
+  }
+
+  .izrael-live__p {
+    width: 520px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .izrael-live__wrap {
+    margin-top: 0;
   }
 }
 
 @media (max-width: $mobile-width) {
+  .izrael-live__wrap {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
+  .izrael-live__head {
+    bottom: 80px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+  }
+
+  .izrael-live__h2 {
+    margin-top: 35px;
+  }
+
+  .izrael-live__br {
+    display: block;
+  }
+
+  .izrael-live__p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .izrael-live__advantage-wrap {
+    width: 300px;
+  }
+
+  .izrael-live__scroll {
+    padding-left: 0;
+    width: 65px;
+  }
+
+  .izrael-live__item {
+    height: 430px;
+  }
 }
