@@ -186,7 +186,12 @@
   }
 
   .feedback__dl {
+    flex-direction: column;
     margin-bottom: 25px;
+  }
+
+  .feedback__dd {
+    margin-left: 0;
   }
 
   .feedback__slider {

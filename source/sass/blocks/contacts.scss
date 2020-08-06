@@ -38,9 +38,17 @@
 }
 
 .contacts__map {
+  background-image: url("../img/map-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
   margin-top: 40px;
   position: absolute;
   right: 0;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background: url("../img/map-desktop@2x.png") no-repeat;
+  }
 }
 
 .contacts__footer {
@@ -96,9 +104,16 @@
   }
 
   .contacts__map {
+    background-image: url("../img/map-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 400px;
     overflow: hidden;
     height: auto;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background: url("../img/map-mobile@2x.png") no-repeat;
+    }
   }
 }
 

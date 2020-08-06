@@ -5,7 +5,6 @@
 .curator__town {
   position: relative;
   padding-left: 25px;
-  margin-top: 5px;
   margin-right: 20px;
   font-style: normal;
   font-weight: normal;
@@ -81,7 +80,7 @@
 
 .curator__navigator {
   display: flex;
-  align-items: last baseline;
+  align-items: center;
   width: 250px;
 }
 

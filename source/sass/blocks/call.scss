@@ -1,14 +1,15 @@
-.call-me {
-  position: absolute;
+.call {
+  position: fixed;
   top: 0;
   z-index: 66667;
 }
 
-.call-me__wrap {
+.call__wrap {
   width: 380px;
   position: relative;
   background-color: $color-white;
   margin: 0 auto;
+  margin-top: 100px;
   overflow: hidden;
   padding-top: 26px;
   padding-bottom: 112px;
@@ -17,22 +18,19 @@
   text-align: center;
 }
 
-.call-me__button {
+.call__button {
   right: 30px;
 }
 
-.call-me__decoration {
+.call__decoration {
   width: 68px;
   height: 64px;
   margin: 0 auto;
   margin-top: 70px;
-  background-image: url("../img/checkmark.svg)");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 @media (max-width: $mobile-width) {
-  .call-me__wrap {
+  .call__wrap {
     width: 288px;
     position: relative;
     background-color: $color-white;

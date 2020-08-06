@@ -177,4 +177,11 @@
   .questions__head::before {
     left: 10px;
   }
+
+  .questions__head::after {
+    right: 0;
+  }
+  .questions__answer {
+    padding-left: 16px;
+  }
 }

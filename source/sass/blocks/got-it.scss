@@ -1,5 +1,5 @@
 .got-it {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 66666;
 }
@@ -9,6 +9,7 @@
   position: relative;
   background-color: $color-white;
   margin: 0 auto;
+  margin-top: 100px;
   overflow: hidden;
   padding-top: 26px;
   padding-bottom: 40px;

@@ -1,14 +1,15 @@
 .galery {
-  background-image: url("../img/galery-desktop.png");
+  background-image: url("../img/galery-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position-x: -10px;
   background-position-y: 10px;
   padding-top: 120px;
   padding-bottom: 196px;
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-    background: url("../img/galery-desktop@2x.png") no-repeat;
+    background: url("../img/galery-desktop@2x.jpg") no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -86,13 +87,15 @@
   .galery {
     padding-top: 0;
     padding-bottom: 0;
-    background-image: url("../img/galery-mobile.png");
+    background-image: url("../img/galery-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 100px;
+    background-size: 100%;
+   background-position: center;
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-      background: url("../img/galery-mobile@2x.png") no-repeat;
+      background: url("../img/galery-mobile@2x.jpg") no-repeat;
+      background-size: 100%;
+      background-position: center;
     }
   }
 
@@ -129,6 +132,7 @@
   .galery__button {
     margin: 0 auto;
     margin-top: 60px;
+    margin-bottom: 10px;
     width: 190px;
   }
 }
