@@ -11,8 +11,7 @@
 </head>
 
 <body>
-  <div style="display: none">
-    <svg style="display: none;">
+  <svg style="display: none;">
     <symbol id="instagram" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.16">
         <path d="M12 8.3999C10.0149 8.3999 8.40002 10.0148 8.40002 11.9999C8.40002 13.985 10.0149 15.5999 12 15.5999C13.9852 15.5999 15.6 13.985 15.6 11.9999C15.6 10.0148 13.9852 8.3999 12 8.3999Z" fill="black"></path>
@@ -43,9 +42,18 @@
         <path d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z" fill="black"></path>
       </g>
     </symbol>
+
+    <symbol id="logo" width="85" height="27" viewBox="0 0 85 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <rect width="85" height="27" fill="url(#pattern0)"></rect>
+      <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0" transform="scale(0.0117647 0.037037)"></use>
+        </pattern>
+        <image id="image0" width="85" height="27" xlink:href="data:image/png;base64,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"></image>
+      </defs>
+    </symbol>
   </svg>
 
-  </div>
   <!--Шапка-->
   <header class="header">
     <nav class="header__nav">
@@ -349,12 +357,13 @@
           </ul>
         </div>
         <ul class="izrael-live__scroll">
-          <li class="izrael-live__li izrael-live__li--active"><a aria-label="экскурсии" class="izraell-live__a izrael-live__a--active" href="#history"></a>
+          <li class="izrael-live__li izrael-live__li--active"><a aria-label="экскурсии" class="izrael-live__a izrael-live__a--active" href="#history"></a>
           </li>
-          <li class="izrael-live__li"><a aria-label="изучение иврита" href="#language"></a></li>
-          <li class="izrael-live__li"><a aria-label="изучение технологий" href="#study"></a></li>
-          <li class="izrael-live__li"><a aria-label="совместные проекты" href="#project"></a></li>
-          <li class="izrael-live__li"><a aria-label="развитие лидерства" href="#lider"></a></li>
+          <li class="izrael-live__li"><a class="izrael-live__a" aria-label="изучение иврита" href="#language"></a></li>
+          <li class="izrael-live__li"><a class="izrael-live__a" aria-label="изучение технологий" href="#study"></a></li>
+          <li class="izrael-live__li"><a class="izrael-live__a" aria-label="совместные проекты" href="#project"></a>
+          </li>
+          <li class="izrael-live__li"><a class="izrael-live__a" aria-label="развитие лидерства" href="#lider"></a></li>
         </ul>
       </div>
     </section>
@@ -778,7 +787,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1143.4205437739895!2d82.92777406370007!3d55.02847731047852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5da569bf9d5%3A0x40382a0defb64c9c!2z0YPQuy4g0KnQtdGC0LjQvdC60LjQvdCwLCA2OCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDk5!5e0!3m2!1sru!2sru!4v1596667989729!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="contacts__iframe" name="Карта" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1143.4205437739895!2d82.92777406370007!3d55.02847731047852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5da569bf9d5%3A0x40382a0defb64c9c!2z0YPQuy4g0KnQtdGC0LjQvdC60LjQvdCwLCA2OCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDk5!5e0!3m2!1sru!2sru!4v1596667989729!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div>
       <div class="contacts__footer">
@@ -803,7 +812,12 @@
   <footer class="footer">
     <section class="footer__wrap">
       <h2 class="visually-hidden">Копирайт</h2>
-      <img src="img/logo-shadow.svg" alt="логотип">
+      <a aria-label="Логотип">
+        <svg width="85" height="27">
+          <desc>логотип</desc>
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
       <p class="footer__p"> Copyright someDesignCompany ©2019</p>
       <div class="footer__icons">
         <a aria-label="фэйсбук" href="#">
@@ -870,6 +884,7 @@
   <script src="js/accordeon.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/post.js"></script>
+  <script src="js/points.js"></script>
 </body>
 
 </html>
