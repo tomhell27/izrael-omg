@@ -59,9 +59,7 @@
 }
 
 .programs__anchors {
-  display: flex;
   margin-top: 35px;
-  flex-direction: column;
   padding-left: 0;
 }
 
@@ -204,12 +202,14 @@
   }
 
   .programs__anchors {
+    display: flex;
     width: 1200px;
     scroll-snap-type: x mandatory;
     scroll-padding: 50%;
     justify-content: space-between;
     margin-top: 0;
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .programs__anchors-item {

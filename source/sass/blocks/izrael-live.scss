@@ -123,6 +123,8 @@
     width: 600px;
     margin: 0 auto;
     overflow: hidden;
+    user-select: none;
+    touch-action: pan-y;
   }
 
   .izrael-live__advantage {
@@ -137,6 +139,11 @@
     height: 400px;
     scroll-snap-align: center;
     position: static;
+    flex-shrink: 0;
+
+    img {
+      pointer-events: none;
+    }
   }
 
   .izrael-live__scroll {
