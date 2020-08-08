@@ -6,11 +6,13 @@
   var wantGo = document.querySelector('.want-to-go');
   var form = wantGo.querySelector('.want-to-go__form');
   var callForm = document.querySelector('.contacts__form');
+  var modalForm = document.querySelector('.got-it__form');
 
   var callMe = document.querySelector('.call');
   var button = callMe.querySelector('.call__button');
   var ok = callMe.querySelector('.call__gradient');
-
+  var mask = '+7 (111) 111-11-11';
+  var check = mask.length;
 
   var onMenuEscPress = function (evt) {
     if (evt.key === ESC_KEY) {
@@ -58,8 +60,8 @@
     el.addEventListener('submit', function (evt) {
       evt.preventDefault();
       var phone = el.querySelector('[name=phone]');
-      if (!phone.value) {
-        phone.classlist.add('modal__error');
+      if (!phone.value || (phone.value.length < check)) {
+        phone.classList.add('modal__error');
       } else {
         showModal();
       }
@@ -68,5 +70,6 @@
 
   goModal(form);
   goModal(callForm);
+  goModal(modalForm);
 
 })();

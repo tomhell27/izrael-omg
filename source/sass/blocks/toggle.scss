@@ -27,3 +27,29 @@
 .toggle__numbers {
   margin: 0;
 }
+
+.toggle__container {
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle__toggle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: $mobile-width) {
+  .toggle {
+    width: 100%;
+    left: 0;
+  }
+
+  .toggle__toggle {
+    width: 100px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+  }
+}

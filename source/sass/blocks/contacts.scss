@@ -4,10 +4,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
-  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-    background: url("../img/watercolor-contacts-desktop@2x.png") no-repeat;
-  }
 }
 
 .contacts__p {
@@ -29,8 +25,10 @@
 }
 
 .contacts__details {
+  position: relative;
   width: calc(100% - 210px);
   min-width: 740px;
+  max-width: 1366px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -38,22 +36,25 @@
 }
 
 .contacts__map {
-  background-image: url("../img/map-desktop.jpg");
+  width: calc(100% - 515px);
+  background-image: url("../img/map-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   margin-top: 40px;
   position: absolute;
-  right: 0;
+  right: -100px;
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background: url("../img/map-desktop@2x.png") no-repeat;
+    background-size: 100%;
   }
 }
 
 .contacts__footer {
   width: calc(100% - 220px);
   min-width: 1000px;
+  max-width: 1366px;
   margin: 0 auto;
   margin-bottom: 55px;
   display: flex;
@@ -90,9 +91,14 @@
   width: 340px;
 }
 
+.contacts__iframe {
+  width: 100%;
+}
+
 @media (max-width: $tablet-width) {
   .contacts__form {
     flex-direction: column;
+    width: auto;
   }
 
   .contacts__input {
@@ -100,7 +106,16 @@
   }
 
   .contacts__questions {
-    width: 500px;
+    width: 300px;
+  }
+
+  .contacts__details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__footer {
+    min-width: 750px;
   }
 
   .contacts__map {
@@ -110,9 +125,11 @@
     width: 400px;
     overflow: hidden;
     height: auto;
+    position: static;
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-      background: url("../img/map-mobile@2x.png") no-repeat;
+      background: url("../img/map-mobile@2x.jpg") no-repeat;
+      background-size: 100%;
     }
   }
 }
@@ -123,6 +140,7 @@
     margin-bottom: 0;
     width: 310px;
     flex-direction: column;
+    align-items: unset;
   }
 
   .contacts__questions {
@@ -146,7 +164,8 @@
 
   .contacts__h {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
 
   .contacts__form {

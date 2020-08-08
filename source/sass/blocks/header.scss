@@ -3,13 +3,15 @@
   height: auto;
   max-height: 830px;
   overflow: hidden;
+  background-image: $color-gradient-back;
   background-image: url("../img/head-photo-desktop.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-    background: url("../img/head-photo-desktop@2x.png") no-repeat;
+    background-image: url("../img/head-photo-desktop@2x.png");
+    background-repeat: no-repeat;
     background-size: 100%;
   }
 }
@@ -20,18 +22,19 @@
   z-index: 6666;
   min-width: 950px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .header__photo {
+  width: calc(100% - 10px);
+  margin: 0 auto;
   position: relative;
   margin-bottom: 0;
   height: auto;
   max-height: 800px;
-  width: 100%;
   min-width: 1000px;
   max-width: 1366px;
 }
@@ -116,6 +119,11 @@
     background-size: cover;
   }
 
+  .header__photo {
+    width: auto;
+    min-width: 0;
+  }
+
   .header__nav {
     width: calc(100% - 40px);
     min-width: 720px;
@@ -123,6 +131,7 @@
   }
 
   .header__photo {
+    width: 100%;
     min-width: 0;
     position: relative;
     bottom: 0;
@@ -190,7 +199,7 @@
   }
 
   .header__izrael {
-    top: 100px;
+    top: 107px;
   }
 
   .header__scroll {

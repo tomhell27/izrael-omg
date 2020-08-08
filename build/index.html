@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Учеба, карьера, работа в Израиле">
+  <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/FiraSans-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Израиль</title>
 </head>
@@ -48,11 +52,11 @@
       <path d="M18 27.88L32.1972 43L66 7" stroke="url(#paint1_linear)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
       <defs>
         <linearGradient id="paint0_linear" x1="16.8421" y1="1.82858" x2="52.588" y2="13.7318" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FFC341"></stop>
+          <stop offset="0.963542" stop-color="#FFC341"></stop>
           <stop offset="0.963542" stop-color="#FFD701"></stop>
         </linearGradient>
         <linearGradient id="paint1_linear" x1="30.6316" y1="8.02857" x2="55.5095" y2="19.0743" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FFC341"></stop>
+          <stop offset="0.963542" stop-color="#FFC341"></stop>
           <stop offset="0.963542" stop-color="#FFD701"></stop>
         </linearGradient>
       </defs>
@@ -136,17 +140,17 @@
           <div class="programs__anchors-container">
             <ul class="programs__anchors">
               <li class="programs__anchors-item programs__anchors-item--active" data-tab="0">
-                <a href="#base" class="programs__link programs__link--culture">Общие</a>
+                <a href="#base" name="base" onclick="return false;" class="programs__link programs__link--culture">Общие</a>
               </li>
               <li class="programs__anchors-item">
-                <a href="#academy" class="programs__link programs__link--study" data-tab="1">Академические</a>
+                <a href="#academy" name="academy" class="programs__link programs__link--study" onclick="return false;" data-tab="1">Академические</a>
               </li>
               <li class="programs__anchors-item">
-                <a href="#internship" class="programs__link programs__link--business" data-tab="2">Стажировки</a>
+                <a href="#internship" name="internship" class="programs__link programs__link--business" onclick="return false;" data-tab="2">Стажировки</a>
               </li>
-              <li class="programs__anchors-item" data-tab="3"><a href="#volunteer" class="programs__link programs__link--volonteur">Волонтерство</a>
+              <li class="programs__anchors-item" data-tab="3"><a href="#volunteer" name="volunteer" onclick="return false;" class="programs__link programs__link--volonteur">Волонтерство</a>
               </li>
-              <li class="programs__anchors-item" data-tab="4"><a href="#religion" class="programs__link programs__link--active programs__link--religion">Религиозные</a>
+              <li class="programs__anchors-item" data-tab="4"><a href="#religion" name="religion" onclick="return false;" class="programs__link programs__link--active programs__link--religion">Религиозные</a>
               </li>
             </ul>
           </div>
@@ -163,7 +167,7 @@
               </p>
             </li>
             <!--2-->
-            <li id="academy" class="programs__item programs__item--study">
+            <li id="academy" class="programs__item programs__item--study close">
               <h3 class="programs__head">Академические</h3>
               <p class="programs__p">
                 Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем
@@ -180,7 +184,7 @@
               </p>
             </li>
             <!--3-->
-            <li id="internship" class="programs__item programs__item--business">
+            <li id="internship" class="programs__item programs__item--business close">
               <h3 class="programs__head">Стажировки</h3>
               <p class="programs__p">
                 Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной
@@ -190,7 +194,7 @@
               </p>
             </li>
             <!--4-->
-            <li id="volunteer" class="programs__item programs__item--volonteur">
+            <li id="volunteer" class="programs__item programs__item--volonteur close">
               <h3 class="programs__head">Волонтерство</h3>
               <p class="programs__p">
                 Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем
@@ -207,7 +211,7 @@
               </p>
             </li>
             <!--5-->
-            <li id="religion" class="programs__item programs__item--religion">
+            <li id="religion" class="programs__item programs__item--religion close">
               <h3 class="programs__head">Религиозные</h3>
               <p class="programs__p">
                 Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной
@@ -231,9 +235,8 @@
             вопросы!
           </p>
           <form class="want-to-go__action" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" autocomplete="off">
-            <label for="phone1">
+            <label for="phone1" class="visually-hidden">телефон</label>
               <input class="phone" id="phone1" name="phone" type="tel" placeholder="Телефон" required="">
-            </label>
             <button class="gradient-button want-to-go__button" type="submit">Перезвоните мне</button>
           </form>
         </div>
@@ -254,7 +257,13 @@
     <section class="how-to-go">
       <div class="how-to-go__wrap">
         <div class="how-to-go__img">
-          <img src="img/img-go-desktop.png" alt="Девушка с парнем улыбаются">
+
+          <picture>
+            <source type="image/webp" srcset="img/img-go-desktop.webp, img/img-go-desktop@2x.webp 2x">
+            <!-- 1x: 870px 2x: 1740px -->
+            <img src="img/img-go-desktop.png" srcset="img/img-go-desktop@2x.png 2x" alt="Девушка с парнем улыбаются">
+          </picture>
+
         </div>
         <div class="how-to-go__description">
           <h2 class="head how-to-go__head">Как поехать</h2>
@@ -280,7 +289,7 @@
       </div>
     </section>
     <!--Жизнь в Израиле-->
-    <section class="izrael-live">
+    <section class="izrael-live lazy">
       <div class="izrael-live__wrap">
         <h2 class="head izrael-live__h2">Жизнь <br class="izrael-live__br"> в Израиле</h2>
         <p class="izrael-live__p">
@@ -453,8 +462,8 @@
         <div class="questions__img-wrap">
           <picture>
             <source type="image/webp" srcset="img/img-questions-desktop.webp, img/img-questions-desktop@2x.webp 2x">
-            <!-- 1x: 870px 2x: 1740px -->
-            <img class="questions__img" src="img/img-questions-desktop.png" srcset="img/img-questions-desktop@2x.png 2x" alt="Девушка и парень за ноутбуком">
+            <!-- 1x: 645px 2x: 1290px -->
+            <img class="questions__img" width="645" height="803" src="img/img-questions-desktop.png" srcset="img/img-questions-desktop@2x.png 2x" alt="Девушка и парень за ноутбуком">
           </picture>
         </div>
       </div>
@@ -475,7 +484,7 @@
                 <!-- 1х: 320px 2x: 640px -->
                 <source media="(max-width: 767px)" srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png" srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
+                <img class="feedback__img lazy" src="img/img-feedback-desktop.png" srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
             </div>
@@ -592,7 +601,7 @@
                 <!-- 1х: 320px 2x: 640px -->
                 <source media="(max-width: 767px)" srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png" srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
+                <img class="feedback__img lazy" src="img/img-feedback-desktop.png" srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
             </div>
@@ -631,7 +640,7 @@
                 <!-- 1х: 320px 2x: 640px -->
                 <source media="(max-width: 767px)" srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png" srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
+                <img class="feedback__img lazy" src="img/img-feedback-desktop.png" srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
             </div>
@@ -670,7 +679,7 @@
                 <!-- 1х: 320px 2x: 640px -->
                 <source media="(max-width: 767px)" srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png" srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
+                <img class="feedback__img lazy" src="img/img-feedback-desktop.png" srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
             </div>
@@ -702,6 +711,7 @@
       </div>
       <div class="feedback__footer">
         <div class="feedback__slider toggle">
+          <div class="toggle__toggle">
           <p class="toggle__numbers">
             <span class="toggle__number toggle__number--left">1</span>
             <span>/</span>
@@ -713,8 +723,10 @@
             <button aria-label="листаем вправо" type="button" class="toggle__button toggle__right"></button>
           </div>
         </div>
+        </div>
 
         <div class="feedback__icons">
+          <div class="feedback__icons-wrap">
           <a aria-label="фэйсбук" href="#">
             <svg width="24" height="24">
               <desc>мы в фэйсбуке</desc>
@@ -733,6 +745,7 @@
               <use xlink:href="#instagram"></use>
             </svg>
           </a>
+        </div>
         </div>
       </div>
     </section>
@@ -755,7 +768,7 @@
                 <!-- 1х: 320px 2x: 640px -->
                 <source media="(max-width: 1023px)" srcset="img/curator-mobile.png, img/curator-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img src="img/curator-desktop.png" srcset="img/curator-desktop@2x.png 2x" alt="Анна Горелик">
+                <img class="lazy" src="img/curator-desktop.png" srcset="img/curator-desktop@2x.png 2x" alt="Анна Горелик">
               </picture>
               <div class="curator__wrap">
                 <p class="curator__name"><span>Ваш куратор:</span> Анна Горелик</p>
@@ -792,7 +805,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe class="contacts__iframe" name="Карта" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1143.4205437739895!2d82.92777406370007!3d55.02847731047852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5da569bf9d5%3A0x40382a0defb64c9c!2z0YPQuy4g0KnQtdGC0LjQvdC60LjQvdCwLCA2OCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDk5!5e0!3m2!1sru!2sru!4v1596667989729!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="contacts__iframe" name="Карта" title="Новосибирск, ул. Щетинкина 68, культурный центр Бейт Менахем" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1143.4205437739895!2d82.92777406370007!3d55.02847731047852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5da569bf9d5%3A0x40382a0defb64c9c!2z0YPQuy4g0KnQtdGC0LjQvdC60LjQvdCwLCA2OCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDk5!5e0!3m2!1sru!2sru!4v1596667989729!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div>
       <div class="contacts__footer">
@@ -806,7 +819,7 @@
             <input class="contacts__input contacts__input--name" id="name" type="text" required="" name="name" placeholder="имя">
           </label>
           <label for="phone">
-            <input class="contacts__input phone" id="phone" type="tel" name="phone" placeholder="+7 (923) 41" required="">
+            <input class="contacts__input phone" id="phone" type="tel" name="phone" placeholder="телефон" required="">
           </label>
           <button class="gradient-button contacts__button" type="submit">Перезвоните мне</button>
         </form>
@@ -817,10 +830,10 @@
   <footer class="footer">
     <section class="footer__wrap">
       <h2 class="visually-hidden">Копирайт</h2>
-      <a aria-label="Логотип">
+      <a aria-label="Логотип" class="footer__logo">
         <picture>
           <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
-          <img src="img/logo-footer.svg" alt="Логотип">
+          <img src="img/logo-footer.svg" width="85" height="27" alt="Логотип">
         </picture>
       </a>
       <p class="footer__p"> Copyright someDesignCompany ©2019</p>
@@ -851,7 +864,7 @@
   <section class="modal got-it close">
     <div class="got-it__wrap">
       <button aria-label="закрыть окно" class="modal__button got-it__button" type="button"></button>
-      <h2>Заказать звонок</h2>
+      <h2 class="got-it__h">Заказать звонок</h2>
       <p>
         Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно
         поможем найти ответ на ваш вопрос!
@@ -872,8 +885,8 @@
       </form>
     </div>
   </section>
-   <!--Заявка принята-->
-   <section class="modal call close">
+  <!--Заявка принята-->
+  <section class="modal call close">
     <div class="call__wrap">
       <button aria-label="закрыть окно" type="button" class="modal__button call__button"></button>
       <div class="call__decoration">
@@ -883,10 +896,11 @@
         </svg>
       </div>
       <h2>Заявка принята</h2>
-      <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
+      <p class="call__p">Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
       <button class="gradient-button call__gradient" type="button">Понятно</button>
-    </div></section>
-  
+    </div>
+  </section>
+
 
   <script src="js/modal.js"></script>
   <script src="js/form.js"></script>

@@ -6,8 +6,6 @@
 
 .modal h2 {
   font-family: $font-montserrat;
-  margin-top: 25px;
-  margin-bottom: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -37,6 +35,10 @@
   position: absolute;
 }
 
+.modal__error {
+  border: 1px $color-error solid;
+}
+
 @media (max-width: $mobile-width) {
   .modal {
     width: 100vw;
@@ -58,9 +60,5 @@
     font-size: 14px;
     line-height: 160%;
     text-align: center;
-  }
-
-  .modal__error {
-    border: 1px $color-error solid;
   }
 }

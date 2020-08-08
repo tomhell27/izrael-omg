@@ -4,17 +4,22 @@
   z-index: 66666;
 }
 
+.got-it__label {
+  cursor: pointer;
+}
+
 .got-it__wrap {
   width: 380px;
   position: relative;
   background-color: $color-white;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 115px;
   overflow: hidden;
   padding-top: 26px;
   padding-bottom: 40px;
   padding-left: 48px;
   padding-right: 48px;
+  border-radius: 10px;
 }
 
 .got-it__input {
@@ -59,7 +64,6 @@
   display: inline-block;
   position: relative;
   top: 5px;
-  right: 10px;
   width: 16px;
   height: 16px;
   background-color: transparent;
@@ -75,14 +79,24 @@
 
 .got-it__gradient {
   margin: auto;
-  margin-top: 32px;
+  margin-top: 22px;
   margin-bottom: 16px;
+  margin-left: 70px;
 }
 
 .got-it__check-container {
   display: flex;
   width: 264px;
   margin: 0 auto;
+}
+
+.got-it__button {
+  right: 26px;
+  top: 30px;
+}
+
+.got-it__h {
+  margin-top: 25px;
 }
 
 @media (max-width: $mobile-width) {
@@ -98,7 +112,21 @@
     padding-right: 16px;
   }
 
+  .got-it__form {
+    display: flex;
+    flex-direction: column;
+  }
+
   .got-it__input {
     width: calc(100% - 40px);
+  }
+
+  .got-it__h {
+    margin-top: 145px;
+    margin-bottom: 15px;
+  }
+
+  .got-it__gradient {
+    margin-left: auto;
   }
 }

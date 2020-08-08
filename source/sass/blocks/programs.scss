@@ -2,8 +2,14 @@
   overflow: hidden;
   background-image: url("../img/sketch-desktop.png");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position-x: right;
   background-position-y: 150px;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background: url("../img/sketch-desktop@2x.png") no-repeat;
+    background-size: auto;
+  }
 }
 
 .programs__wrap {
@@ -198,7 +204,13 @@
 
   .programs__anchors-container {
     width: 100%;
+    height: 80px;
     overflow: hidden;
+  }
+
+  .programs__link::before {
+    top: 10px;
+    left: 15px;
   }
 
   .programs__anchors {
@@ -206,7 +218,7 @@
     width: 1200px;
     scroll-snap-type: x mandatory;
     scroll-padding: 50%;
-    justify-content: space-between;
+    justify-content: unset;
     margin-top: 0;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -214,9 +226,13 @@
 
   .programs__anchors-item {
     scroll-snap-align: center;
+    width: auto;
+    padding-right: 15px;
   }
 
   .programs__link {
+    padding-left: 60px;
+    padding-right: 20px;
     font-size: 15px;
     line-height: 18px;
   }
@@ -226,21 +242,26 @@
       color: $color-white;
       text-transform: uppercase;
       opacity: 1;
-      background-image: url("../img/back-active-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
+      display: block;
+      width: auto;
+      height: 20px;
+      background-image: $color-gradient;
+      border-radius: 80px;
+      padding-right: 10px;
+      padding-bottom: 15px;
+      padding-top: 15px;
     }
   }
 
   .programs__wrap {
     width: 100%;
+    margin-top: 75px;
     min-width: 0;
-    margin-top: 80px;
   }
 
   .programs__h {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .programs__head {
@@ -252,7 +273,7 @@
 
   .programs__list {
     width: calc(100% - 20px);
-    height: 450px;
+    height: auto;
     max-width: 300px;
     margin: 0 auto;
   }
@@ -267,7 +288,7 @@
   }
 
   .programs__item {
-    height: 450px;
+    height: auto;
   }
 
   .programs__p2 {

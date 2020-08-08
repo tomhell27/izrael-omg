@@ -2,7 +2,7 @@
   background-image: url("../img/galery-desktop.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-x: -10px;
+  background-position-x: 10px;
   background-position-y: 10px;
   padding-top: 120px;
   padding-bottom: 196px;
@@ -10,6 +10,8 @@
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background: url("../img/galery-desktop@2x.jpg") no-repeat;
     background-size: 100%;
+    background-position-y: 10px;
+    background-position-x: 10px;
   }
 }
 
@@ -90,7 +92,7 @@
     background-image: url("../img/galery-mobile.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-   background-position: center;
+    background-position: center;
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
       background: url("../img/galery-mobile@2x.jpg") no-repeat;

@@ -1,12 +1,8 @@
 .questions {
   position: relative;
-  background-image: url("../img/watercolor-questions-desktop.png");
+  background-image: url("../img/watercolor-questions.png");
   background-repeat: no-repeat;
   background-size: contain;
-
-  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-    background: url("../img/watercolor-questions-desktop@2x.png") no-repeat;
-  }
 }
 
 .questions::before {
@@ -22,6 +18,7 @@
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background: url("../img/bag-desktop@2x.png") no-repeat;
+    background-size: auto;
   }
 }
 
@@ -115,6 +112,7 @@
 .questions__wrap {
   display: flex;
   width: calc(100% - 220px);
+  max-width: 1366px;
   margin: 0 auto;
   margin-top: 100px;
 }

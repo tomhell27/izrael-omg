@@ -13,8 +13,14 @@
   height: 200px;
   background-image: url("../img/stamp-desktop.png");
   background-repeat: no-repeat;
+  background-size: auto;
   top: 0;
   right: 0;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background: url("../img/stamp-desktop@2x.png") no-repeat;
+    background-size: auto;
+  }
 }
 
 .how-to-go__img {
@@ -34,6 +40,8 @@
   display: flex;
   width: calc(100% - 262px);
   min-width: 980px;
+  position: relative;
+  max-width: 1366px;
   justify-content: flex-end;
   margin: 0 auto;
   margin-bottom: 150px;
