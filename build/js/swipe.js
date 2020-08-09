@@ -88,5 +88,5 @@
   };
 
   onSlide(slider, sliderTrack, slideWidth, -1200);
-  onSlide(programs, programsTrack, programsWidth, -300);
+  onSlide(programs, programsTrack, programsWidth, -600);
 })();
