@@ -215,7 +215,7 @@
 
   .programs__anchors {
     display: flex;
-    width: 1200px;
+    width: 900px;
     scroll-snap-type: x mandatory;
     scroll-padding: 50%;
     justify-content: unset;
@@ -228,6 +228,7 @@
     scroll-snap-align: center;
     width: auto;
     padding-right: 15px;
+    pointer-events: none;
   }
 
   .programs__link {
