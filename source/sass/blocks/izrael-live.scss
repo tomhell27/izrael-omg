@@ -186,6 +186,7 @@
 @media (max-width: $mobile-width) {
   .izrael-live__wrap {
     width: 100%;
+    min-width: 0;
     margin-bottom: 20px;
   }
 
@@ -208,7 +209,8 @@
   }
 
   .izrael-live__p {
-    width: 100%;
+    text-align: left;
+    width: 295px;
     font-weight: normal;
     font-size: 16px;
     line-height: 160%;

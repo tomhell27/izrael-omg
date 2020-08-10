@@ -2,7 +2,7 @@
   overflow: hidden;
   background-image: url("../img/sketch-desktop.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-position-x: right;
   background-position-y: 150px;
 
@@ -194,6 +194,10 @@
 
   .programs__list {
     height: 400px;
+  }
+
+  .programs__anchors {
+    position: relative;
   }
 }
 

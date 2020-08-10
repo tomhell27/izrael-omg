@@ -8,8 +8,6 @@
   var callForm = document.querySelector('.contacts__form');
   var callFormInput = callForm.querySelector('.phone');
   var mask = '+7 (111) 111-11-11';
-
-
   var getMask = function (el) {
     el.addEventListener('keydown', function (event) {
       if (!(event.key === 'ArrowLeft' || event.key === 'ArrowRight' || event.key === 'Backspace' || event.key === 'Tab')) {
@@ -34,11 +32,9 @@
       }
     });
   };
-
   getMask(phoneInput);
   getMask(formPhoneInput);
   getMask(callFormInput);
-
   window.mask = {
     form: form,
     callForm: callForm,

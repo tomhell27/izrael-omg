@@ -11,7 +11,7 @@
   height: 535px;
   background-image: url("../img/sketch-desktop.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
   position: absolute;
   top: 0;
   right: 0;
@@ -19,7 +19,7 @@
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background: url("../img/sketch-desktop@2x.png") no-repeat;
-    background-size: contain;
+    background-size: auto;
   }
 }
 
@@ -102,7 +102,7 @@
   position: absolute;
   bottom: 35px;
   width: 675px;
-  right: 170px;
+  right: 195px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -123,6 +123,12 @@
   position: relative;
   bottom: 10px;
   left: 10px;
+}
+
+.feedback__icons-wrap {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: $live-good-width) {
@@ -188,8 +194,8 @@
     margin: 0 auto;
     margin-bottom: 40px;
     top: 10px;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
   }
 
   .feedback__a {
@@ -233,7 +239,6 @@
   }
 
   .feedback__icons-wrap {
-    width: 300px;
-    margin: 0 auto;
+    margin-top: 10px;
   }
 }

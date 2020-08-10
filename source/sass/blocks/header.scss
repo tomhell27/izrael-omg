@@ -3,7 +3,6 @@
   height: auto;
   max-height: 830px;
   overflow: hidden;
-  background-image: $color-gradient-back;
   background-image: url("../img/head-photo-desktop.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -120,21 +119,16 @@
   }
 
   .header__photo {
-    width: auto;
+    width: 100%;
     min-width: 0;
+    position: relative;
+    bottom: 0;
   }
 
   .header__nav {
     width: calc(100% - 40px);
     min-width: 720px;
     justify-content: space-between;
-  }
-
-  .header__photo {
-    width: 100%;
-    min-width: 0;
-    position: relative;
-    bottom: 0;
   }
 
   .header__izrael {
@@ -211,7 +205,6 @@
     margin: 0 auto;
   }
 }
-
 
 @media (max-width: $good-look-width) {
   .header {

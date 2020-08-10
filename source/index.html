@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Учеба, карьера, работа в Израиле" />
   <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/FiraSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css" />
   <title>Израиль</title>
 </head>
-
 <body>
   <svg style="display: none;">
     <symbol id="instagram" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +23,6 @@
           fill="black" />
       </g>
     </symbol>
-
     <symbol id="facebook" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.16">
         <path
@@ -34,7 +30,6 @@
           fill="black" />
       </g>
     </symbol>
-
     <symbol id="watsup" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.16">
         <path
@@ -42,7 +37,6 @@
           fill="black" />
       </g>
     </symbol>
-
     <symbol id="twiter" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.16">
         <path
@@ -50,7 +44,6 @@
           fill="black" />
       </g>
     </symbol>
-
     <symbol id="telegram" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.16">
         <path
@@ -144,7 +137,7 @@
             <source media="(max-width: 767px)"
               srcset="img/program-photo-mobile.jpg, img/program-photo-mobile@2x.jpg 2x">
             <!-- 1x: 870px 2x: 1740px -->
-            <img src="img/program-photo-desktop.jpg" srcset="img/program-photo-desktop@2x.jpg 2x" alt="Видео">
+            <img loading="lazy" src="img/program-photo-desktop.jpg" srcset="img/program-photo-desktop@2x.jpg 2x" alt="Видео">
           </picture>
 
           <button aria-label="смотреть видео" class="about-program__button" type="button"></button>
@@ -159,18 +152,18 @@
           <div class="programs__anchors-container">
             <ul class="programs__anchors">
               <li class="programs__anchors-item programs__anchors-item--active" data-tab="0">
-                <a href="#base" name="base" onclick="return false;" class="programs__link programs__link--culture">Общие</a>
+                <a href="#base" onclick="return false;" class="programs__link programs__link--culture">Общие</a>
               </li>
               <li class="programs__anchors-item">
-                <a href="#academy" name="academy" class="programs__link programs__link--study" onclick="return false;" data-tab="1">Академические</a>
+                <a href="#academy" class="programs__link programs__link--study" onclick="return false;" data-tab="1">Академические</a>
               </li>
               <li class="programs__anchors-item">
-                <a href="#internship" name="internship" class="programs__link programs__link--business" onclick="return false;" data-tab="2">Стажировки</a>
+                <a href="#internship" class="programs__link programs__link--business" onclick="return false;" data-tab="2">Стажировки</a>
               </li>
-              <li class="programs__anchors-item" data-tab="3"><a href="#volunteer" name="volunteer" onclick="return false;"
+              <li class="programs__anchors-item" data-tab="3"><a href="#volunteer" onclick="return false;"
                   class="programs__link programs__link--volonteur">Волонтерство</a>
               </li>
-              <li class="programs__anchors-item" data-tab="4"><a href="#religion" name="religion" onclick="return false;"
+              <li class="programs__anchors-item" data-tab="4"><a href="#religion" onclick="return false;"
                   class="programs__link programs__link--active programs__link--religion">Религиозные</a>
               </li>
             </ul>
@@ -271,7 +264,7 @@
             <!-- 1х: 320px 2x: 640px -->
             <source media="(max-width: 1023px)" srcset="img/want-photo-mobile.png, img/want-photo-mobile@2x.png 2x">
             <!-- 1x: 870px 2x: 1740px -->
-            <img class="want-to-go__picture" src="img/want-photo-desktop.png" srcset="img/want-photo-desktop@2x.png 2x"
+            <img loading="lazy" class="want-to-go__picture" src="img/want-photo-desktop.png" srcset="img/want-photo-desktop@2x.png 2x"
               alt="Девушка с флагом Израиля">
           </picture>
         </div>
@@ -285,7 +278,7 @@
           <picture>
             <source type="image/webp" srcset="img/img-go-desktop.webp, img/img-go-desktop@2x.webp 2x">
             <!-- 1x: 870px 2x: 1740px -->
-            <img src="img/img-go-desktop.png" srcset="img/img-go-desktop@2x.png 2x" alt="Девушка с парнем улыбаются">
+            <img loading="lazy" src="img/img-go-desktop.png" srcset="img/img-go-desktop@2x.png 2x" alt="Девушка с парнем улыбаются">
           </picture>
 
         </div>
@@ -313,7 +306,7 @@
       </div>
     </section>
     <!--Жизнь в Израиле-->
-    <section class="izrael-live lazy">
+    <section class="izrael-live">
       <div class="izrael-live__wrap">
         <h2 class="head izrael-live__h2">Жизнь <br class="izrael-live__br"> в Израиле</h2>
         <p class="izrael-live__p">
@@ -393,7 +386,7 @@
                 <!-- 1х: 320px 2x: 640px -->
                 <source media="(max-width: 1023px)" srcset="img/lider-mobile.png, img/lider-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img loading="lazy"  src="img/lider-desktop.png" srcset="img/lidert-desktop@2x.png 2x"
+                <img loading="lazy" src="img/lider-desktop.png" srcset="img/lidert-desktop@2x.png 2x"
                   alt="Человек на фоне заходящего солнца">
               </picture>
 
@@ -495,7 +488,7 @@
           <picture>
             <source type="image/webp" srcset="img/img-questions-desktop.webp, img/img-questions-desktop@2x.webp 2x">
             <!-- 1x: 645px 2x: 1290px -->
-            <img class="questions__img" width="645" height="803" src="img/img-questions-desktop.png" srcset="img/img-questions-desktop@2x.png 2x"
+            <img loading="lazy" class="questions__img" width="645" height="803" src="img/img-questions-desktop.png" srcset="img/img-questions-desktop@2x.png 2x"
               alt="Девушка и парень за ноутбуком">
           </picture>
         </div>
@@ -519,7 +512,7 @@
                 <source media="(max-width: 767px)"
                   srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png"
+                <img loading="lazy" class="feedback__img" src="img/img-feedback-desktop.png"
                   srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
@@ -561,7 +554,7 @@
                 <source media="(max-width: 767px)"
                   srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png"
+                <img loading="lazy" class="feedback__img" src="img/img-feedback-desktop.png"
                   srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
@@ -603,7 +596,7 @@
                 <source media="(max-width: 767px)"
                   srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png"
+                <img loading="lazy" class="feedback__img" src="img/img-feedback-desktop.png"
                   srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
@@ -645,7 +638,7 @@
                 <source media="(max-width: 767px)"
                   srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png"
+                <img loading="lazy" class="feedback__img" src="img/img-feedback-desktop.png"
                   srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
@@ -687,7 +680,7 @@
                 <source media="(max-width: 767px)"
                   srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png"
+                <img loading="lazy" class="feedback__img" src="img/img-feedback-desktop.png"
                   srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
@@ -729,7 +722,7 @@
                 <source media="(max-width: 767px)"
                   srcset="img/img-feedback-mobile.png, img/img-feedback-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img class="feedback__img" src="img/img-feedback-desktop.png"
+                <img loading="lazy" class="feedback__img" src="img/img-feedback-desktop.png"
                   srcset="img/img-feedback-desktop@2x.png 2x" alt="Ольга Михайлова">
               </picture>
 
@@ -820,7 +813,7 @@
                 <!-- 1х: 320px 2x: 640px -->
                 <source media="(max-width: 1023px)" srcset="img/curator-mobile.png, img/curator-mobile@2x.png 2x">
                 <!-- 1x: 870px 2x: 1740px -->
-                <img src="img/curator-desktop.png" srcset="img/curator-desktop@2x.png 2x" alt="Анна Горелик">
+                <img loading="lazy" src="img/curator-desktop.png" srcset="img/curator-desktop@2x.png 2x" alt="Анна Горелик">
               </picture>
               <div class="curator__wrap">
                 <p class="curator__name"><span>Ваш куратор:</span> Анна Горелик</p>
@@ -889,7 +882,7 @@
       <a aria-label="Логотип" class="footer__logo">
         <picture>
           <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
-          <img src="img/logo-footer.svg" width="85" height="27" alt="Логотип">
+          <img loading="lazy" src="img/logo-footer.svg" width="85" height="27" alt="Логотип">
         </picture>
       </a>
       <p class="footer__p"> Copyright someDesignCompany ©2019</p>
@@ -958,8 +951,6 @@
       <button class="gradient-button call__gradient" type="button">Понятно</button>
     </div>
   </section>
-
-
   <script src="js/modal.js"></script>
   <script src="js/form.js"></script>
   <script src="js/mask.js"></script>

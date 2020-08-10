@@ -19,43 +19,34 @@
       hideModal();
     }
   };
-
   var showModal = function () {
     callMe.classList.remove('close');
     document.body.classList.add('body-fix');
     callMe.classList.add('open');
     document.addEventListener('keydown', onMenuEscPress);
   };
-
   var hideModal = function () {
     callMe.classList.remove('open');
     callMe.classList.add('close');
     document.body.classList.remove('body-fix');
     document.removeEventListener('keydown', onMenuEscPress);
   };
-
-
   button.addEventListener('click', function () {
     hideModal();
   });
-
   button.addEventListener('keydown', function (evt) {
     if (evt.key === ENTER_KEY) {
       hideModal();
     }
   });
-
-
   ok.addEventListener('click', function () {
     hideModal();
   });
-
   ok.addEventListener('keydown', function (evt) {
     if (evt.key === ENTER_KEY) {
       hideModal();
     }
   });
-
   var goModal = function (el) {
     el.addEventListener('submit', function (evt) {
       evt.preventDefault();
@@ -67,9 +58,7 @@
       }
     });
   };
-
   goModal(form);
   goModal(callForm);
   goModal(modalForm);
-
 })();
