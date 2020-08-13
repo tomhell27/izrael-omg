@@ -4,18 +4,14 @@
   var phone = window.mask.form.querySelector('[name=phone]');
   var callName = window.mask.callForm.querySelector('[name=name]');
   var callPhone = window.mask.callForm.querySelector('[name=phone]');
-
   var isStorageSupport = true;
   var storage = {};
-
   try {
     storage.name = localStorage.getItem('name');
     storage.phone = localStorage.getItem('phone');
-
   } catch (err) {
     isStorageSupport = false;
   }
-
   window.mask.form.addEventListener('submit', function (evt) {
     evt.preventDefault();
     if (!phone.value) {
@@ -27,7 +23,6 @@
       }
     }
   });
-
   window.mask.callForm.addEventListener('submit', function (evt) {
     evt.preventDefault();
     if (!callName.value || !callPhone.value) {

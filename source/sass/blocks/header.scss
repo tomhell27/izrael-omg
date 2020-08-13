@@ -5,13 +5,13 @@
   overflow: hidden;
   background-image: url("../img/head-photo-desktop.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   position: relative;
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background-image: url("../img/head-photo-desktop@2x.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
   }
 }
 

@@ -7,7 +7,6 @@
   var form = wantGo.querySelector('.want-to-go__form');
   var callForm = document.querySelector('.contacts__form');
   var modalForm = document.querySelector('.got-it__form');
-
   var callMe = document.querySelector('.call');
   var button = callMe.querySelector('.call__button');
   var ok = callMe.querySelector('.call__gradient');

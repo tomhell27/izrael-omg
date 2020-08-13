@@ -12,14 +12,12 @@
   var phone = modal.querySelector('[name=phone]');
   var isStorageSupport = true;
   var storage = {};
-
   try {
     storage.name = localStorage.getItem('name');
     storage.phone = localStorage.getItem('phone');
   } catch (err) {
     isStorageSupport = false;
   }
-
   form.addEventListener('submit', function (evt) {
     if (!name.value || !phone.value) {
       evt.preventDefault();
@@ -53,21 +51,17 @@
     document.body.classList.remove('body-fix');
     document.removeEventListener('keydown', onMenuEscPress);
   };
-
   openButton.addEventListener('click', function () {
     showModal();
   });
-
   openButton.addEventListener('keydown', function (evt) {
     if (evt.key === ENTER_KEY) {
       showModal();
     }
   });
-
   closeButton.addEventListener('click', function () {
     hideModal();
   });
-
   closeButton.addEventListener('keydown', function (evt) {
     if (evt.key === ENTER_KEY) {
       hideModal();
