@@ -64,9 +64,10 @@
   content: "";
   display: inline-block;
   position: relative;
-  top: 5px;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
+  right: 10px;
+  top: 0;
   background-color: transparent;
   border: 1px $color-hover solid;
 }

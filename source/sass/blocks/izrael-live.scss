@@ -128,6 +128,7 @@
   }
 
   .izrael-live__advantage {
+    cursor: pointer;
     flex-wrap: nowrap;
     width: 1500px;
     scroll-snap-type: x mandatory;
@@ -191,6 +192,8 @@
   }
 
   .izrael-live__head {
+    bottom: 90px;
+    margin-top: 0;
     bottom: 80px;
     font-weight: 800;
     font-size: 18px;
@@ -210,7 +213,7 @@
 
   .izrael-live__p {
     text-align: left;
-    width: 295px;
+    width: 285px;
     font-weight: normal;
     font-size: 16px;
     line-height: 160%;
@@ -218,6 +221,7 @@
 
   .izrael-live__advantage-wrap {
     width: 300px;
+    height: 420px;
   }
 
   .izrael-live__scroll {

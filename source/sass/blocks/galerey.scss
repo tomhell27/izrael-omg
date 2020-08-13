@@ -15,6 +15,10 @@
   }
 }
 
+.galery__br {
+  display: none;
+}
+
 .galery__p {
   color: $color-white;
   font-style: normal;
@@ -91,7 +95,7 @@
     padding-bottom: 0;
     background-image: url("../img/galery-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     background-position: center;
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
@@ -135,6 +139,15 @@
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 10px;
-    width: 190px;
+    width: 170px;
+    padding-left: 95px;
+  }
+
+  .galery__button::before {
+    left: 60px;
+  }
+
+  .galery__br {
+    display: block;
   }
 }

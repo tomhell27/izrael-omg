@@ -42,8 +42,11 @@
 
 @media (max-width: $mobile-width) {
   .toggle {
+    position: absolute;
+    z-index: 6666666666666;
     width: 100%;
     left: 0;
+    bottom: 690px;
   }
 
   .toggle__toggle {

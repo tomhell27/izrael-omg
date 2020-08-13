@@ -3,6 +3,7 @@
 (function () {
   var slider = document.querySelector('.izrael-live');
   var sliderTrack = slider.querySelector('.slider-track');
+
   var programs = document.querySelector('.programs__anchors-container');
   var programsTrack = document.querySelector('.programs__anchors');
   var programsWidth = 300;
@@ -19,7 +20,9 @@
     var slide = function () {
       section.style.transition = 'transform 0.5s';
       var newInd = slideIndex * width;
-      section.style.transform = 'translate3d(' + (newInd) + 'px, 0px, 0px)';
+      if (newInd >= maxwidth) {
+        section.style.transform = 'translate3d(' + (newInd) + 'px, 0px, 0px)';
+      }
     };
     var getEvent = function () {
       return event.type.search('touch') !== -1 ? event.touches[0] : event;
@@ -39,8 +42,8 @@
       var transform = style.match(trfRegExp)[0];
       posX2 = posX1 - evt.clientX;
       var newTransform = transform - posX2;
-      if (newTransform > 0 || newTransform <= maxwidth) {
-        section.style.transform = 'translate3d(0px, 0px, 0px)';
+      if (newTransform > 0 || newTransform < maxwidth) {
+        newTransform = 0;
         return;
       } else {
         posX1 = evt.clientX;
@@ -70,12 +73,8 @@
     swipe.addEventListener('touchstart', swipeStart);
     swipe.addEventListener('mousedown', swipeStart);
   };
-  var bodyWidth = programs.offsetWidth;
-  if (bodyWidth <= 767) {
-    onSlide(programs, programsTrack, programsWidth, -600);
-  }
-  var izraelWidth = slider.offsetWidth;
-  if (izraelWidth <= 1023) {
-    onSlide(slider, sliderTrack, slideWidth, -1200);
-  }
+
+  onSlide(programs, programsTrack, programsWidth, -620);
+  onSlide(slider, sliderTrack, slideWidth, -1200);
+
 })();

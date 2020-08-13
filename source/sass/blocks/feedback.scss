@@ -5,6 +5,13 @@
   background-size: 100%;
 }
 
+.feedback__footer-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
 .feedback::before {
   content: "";
   width: 843px;
@@ -99,13 +106,13 @@
 }
 
 .feedback__footer {
-  position: absolute;
-  bottom: 35px;
+  position: relative;
   width: 675px;
-  right: 195px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  left: 160px;
+  bottom: 60px;
 }
 
 .feedback__head {
@@ -179,6 +186,7 @@
 
   .feedback__list-wrap {
     width: 300px;
+    padding-bottom: 0;
   }
 
   .feedback__description {
@@ -205,6 +213,7 @@
 
   .feedback__block {
     width: 100%;
+    text-align: left;
     margin: 0;
     padding-top: 25px;
   }
@@ -218,14 +227,9 @@
     margin-left: 0;
   }
 
-  .feedback__slider {
-    position: absolute;
-    bottom: 660px;
-    left: calc((100% / 2) - 40px);
-  }
-
   .feedback__footer {
     left: 0;
+    position: relative;
   }
 
   .feedback__head {
@@ -233,12 +237,12 @@
   }
 
   .feedback__icons {
-    padding-left: 10px;
     width: 100%;
     margin: 0 auto;
   }
 
   .feedback__icons-wrap {
     margin-top: 10px;
+    width: 100px;
   }
 }
