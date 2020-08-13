@@ -131,8 +131,7 @@
     swipe.addEventListener('touchstart', swipeStart);
     swipe.addEventListener('mousedown', swipeStart);
   };
-  if (programsTrack.clientWidth > 250) {
-    onSlider(programs, programsTrack, programsWidth, -600);
-  }
+
+  onSlider(programs, programsTrack, programsWidth, -600);
   onSlide(slider, sliderTrack, slideWidth, -1200);
 })();
